@@ -1,0 +1,216 @@
+1
+00:00:00,433 --> 00:00:03,667
+AI Restaurant Booker
+calls restaurants for you.
+
+2
+00:00:03,667 --> 00:00:07,800
+Choose your restaurants, set their
+priority order, and enter your booking
+
+3
+00:00:07,800 --> 00:00:12,467
+details. It works through your list
+with your date, time, party size,
+
+4
+00:00:12,467 --> 00:00:16,267
+and requirements, stopping
+when a table is confirmed.
+
+5
+00:00:20,433 --> 00:00:22,467
+Choose Madrid or Navarra.
+
+6
+00:00:22,467 --> 00:00:26,800
+Find your restaurants, save favorites,
+and drag your shortlist into priority
+
+7
+00:00:26,800 --> 00:00:31,067
+order. Four guests. Nine o’clock.
+
+8
+00:00:31,067 --> 00:00:33,467
+Thirty minutes of flexibility.
+
+9
+00:00:33,467 --> 00:00:38,333
+Add seating preferences, dietary
+requirements, and a special request.
+
+10
+00:00:38,333 --> 00:00:42,833
+Start the booking. Voice takes
+on the restaurant contact.
+
+11
+00:00:42,833 --> 00:00:45,167
+The first restaurant is full.
+
+12
+00:00:45,167 --> 00:00:49,233
+The second proposes ten thirty,
+beyond the allowed window.
+
+13
+00:00:49,233 --> 00:00:51,233
+The workflow moves on.
+
+14
+00:00:51,233 --> 00:00:55,967
+The third provides confirmation evidence,
+and the result appears right here.
+
+15
+00:00:55,967 --> 00:00:58,433
+Your requirements stay in control.
+
+16
+00:01:00,433 --> 00:01:04,600
+AI Control Center takes you inside
+the work behind each booking.
+
+17
+00:01:04,600 --> 00:01:07,833
+Open a restaurant contact to see
+its result and the AI workflow
+
+18
+00:01:07,833 --> 00:01:09,800
+recorded for that call.
+
+19
+00:01:09,800 --> 00:01:13,733
+Compare your three contacts, then
+follow the agents from the first action
+
+20
+00:01:13,733 --> 00:01:15,567
+to the final outcome.
+
+21
+00:01:25,433 --> 00:01:29,667
+For each call, Control Center shows
+how the AI agents worked: which
+
+22
+00:01:29,667 --> 00:01:33,100
+agent acted, when, and in what order.
+
+23
+00:01:33,100 --> 00:01:35,433
+The graph connects their actions.
+
+24
+00:01:35,433 --> 00:01:40,267
+This illustration follows Voice as it
+sends a proposed time to Negotiation.
+
+25
+00:01:40,267 --> 00:01:44,233
+Negotiation checks your limits and
+returns a decision so Voice can continue
+
+26
+00:01:44,233 --> 00:01:46,600
+within the terms you authorized.
+
+27
+00:01:46,600 --> 00:01:50,367
+Verification then checks the
+final confirmation evidence.
+
+28
+00:01:50,367 --> 00:01:55,067
+Back in the recorded workflow, inspect
+each agent’s actions, tools, and saved
+
+29
+00:01:55,067 --> 00:01:59,767
+results. Memory and Summary
+records the outcome; Evaluation
+
+30
+00:01:59,767 --> 00:02:04,067
+checks consistency. Select an event
+and follow the timeline to see the
+
+31
+00:02:04,067 --> 00:02:07,667
+sequence of agent handoffs and
+what happened at each moment.
+
+32
+00:02:10,433 --> 00:02:13,967
+The second attempt tells us
+why the workflow moved on.
+
+33
+00:02:13,967 --> 00:02:17,733
+We asked for nine; the
+restaurant offered ten thirty.
+
+34
+00:02:17,733 --> 00:02:20,933
+Ninety minutes exceeds the
+thirty-minute allowance.
+
+35
+00:02:20,933 --> 00:02:25,700
+Offer Review exposes the recorded
+policy decision: unacceptable.
+
+36
+00:02:25,700 --> 00:02:30,100
+Beside it, the backend tool shows
+how the attempt was processed.
+
+37
+00:02:30,100 --> 00:02:34,800
+These are the stored events, separate
+from the illustrated voice handoff.
+
+38
+00:02:34,800 --> 00:02:38,300
+The timeline connects each
+operation to its duration.
+
+39
+00:02:38,300 --> 00:02:41,867
+Replay follows that history
+without making another call.
+
+40
+00:02:41,867 --> 00:02:46,333
+And the third attempt closes the loop:
+explicit confirmation evidence, checked
+
+41
+00:02:46,333 --> 00:02:49,433
+against the request and
+linked to the final result.
+
+42
+00:02:55,433 --> 00:02:59,567
+Analytics brings outcomes and timings
+together, making patterns easier to
+
+43
+00:02:59,567 --> 00:03:04,567
+spot. In Playground, run a
+scenario, review its checks,
+
+44
+00:03:04,567 --> 00:03:07,867
+and open the trace—all
+inside the demo environment.
+
+45
+00:03:08,433 --> 00:03:12,167
+AI Restaurant Booker. A simple experience.
+
+46
+00:03:12,167 --> 00:03:14,333
+An inspectable execution.

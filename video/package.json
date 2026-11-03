@@ -1,0 +1,36 @@
+{
+  "name": "ai-restaurant-booker-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "preview": "remotion studio src/index.ts",
+    "check": "tsc --noEmit",
+    "render": "node scripts/render.mjs",
+    "validate": "node scripts/validate.mjs",
+    "demo:prepare": "node scripts/demo.mjs prepare",
+    "demo:start": "node scripts/demo.mjs serve",
+    "demo:reset": "node scripts/demo.mjs reset",
+    "capture": "node scripts/capture.mjs",
+    "narration": "node scripts/narration.mjs",
+    "captions": "node scripts/captions.mjs",
+    "demo:restore": "node scripts/demo.mjs restore",
+    "review": "node scripts/review.mjs",
+    "stills": "node scripts/stills.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.540",
+    "@remotion/captions": "4.0.540",
+    "@remotion/cli": "4.0.540",
+    "@remotion/media": "4.0.540",
+    "@remotion/renderer": "4.0.540",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

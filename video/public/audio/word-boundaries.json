@@ -1,0 +1,2370 @@
+{
+    "voice":  "Microsoft David Desktop",
+    "scenes":  [
+                   {
+                       "scene":  1,
+                       "sourceSha256":  "1a68392b3a288f3050d3bc8ea82e907911af37534da21204c3fbad56aa459a9c",
+                       "words":  [
+                                     {
+                                         "Text":  "AI",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "Restaurant",
+                                         "CharacterPosition":  3,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  0.30439909297052153
+                                     },
+                                     {
+                                         "Text":  "Booker",
+                                         "CharacterPosition":  14,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.88430839002267569
+                                     },
+                                     {
+                                         "Text":  "calls",
+                                         "CharacterPosition":  21,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  1.22421768707483
+                                     },
+                                     {
+                                         "Text":  "restaurants",
+                                         "CharacterPosition":  27,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  1.6191836734693874
+                                     },
+                                     {
+                                         "Text":  "for",
+                                         "CharacterPosition":  39,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  2.22907029478458
+                                     },
+                                     {
+                                         "Text":  "you",
+                                         "CharacterPosition":  43,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  2.4040362811791383
+                                     },
+                                     {
+                                         "Text":  "Choose",
+                                         "CharacterPosition":  48,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  3.5189569160997731
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  55,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  3.8239455782312923
+                                     },
+                                     {
+                                         "Text":  "restaurants",
+                                         "CharacterPosition":  60,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  3.9688888888888889
+                                     },
+                                     {
+                                         "Text":  "set",
+                                         "CharacterPosition":  73,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  5.11374149659864
+                                     },
+                                     {
+                                         "Text":  "their",
+                                         "CharacterPosition":  77,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  5.3836734693877553
+                                     },
+                                     {
+                                         "Text":  "priority",
+                                         "CharacterPosition":  83,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  5.53360544217687
+                                     },
+                                     {
+                                         "Text":  "order",
+                                         "CharacterPosition":  92,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  6.1234920634920638
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  99,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.9083900226757358
+                                     },
+                                     {
+                                         "Text":  "enter",
+                                         "CharacterPosition":  103,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  7.0983673469387751
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  109,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  7.3882993197278912
+                                     },
+                                     {
+                                         "Text":  "booking",
+                                         "CharacterPosition":  114,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  7.5432199546485261
+                                     },
+                                     {
+                                         "Text":  "details",
+                                         "CharacterPosition":  122,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  7.9231292517006793
+                                     },
+                                     {
+                                         "Text":  "It",
+                                         "CharacterPosition":  131,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  9.3880272108843545
+                                     },
+                                     {
+                                         "Text":  "works",
+                                         "CharacterPosition":  134,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  9.5380045351473921
+                                     },
+                                     {
+                                         "Text":  "through",
+                                         "CharacterPosition":  140,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  9.8629478458049871
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  148,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.087891156462584
+                                     },
+                                     {
+                                         "Text":  "list",
+                                         "CharacterPosition":  153,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.242811791383218
+                                     },
+                                     {
+                                         "Text":  "with",
+                                         "CharacterPosition":  158,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.517777777777777
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  163,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.697732426303855
+                                     },
+                                     {
+                                         "Text":  "date",
+                                         "CharacterPosition":  168,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.842675736961452
+                                     },
+                                     {
+                                         "Text":  "time",
+                                         "CharacterPosition":  174,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  11.327664399092969
+                                     },
+                                     {
+                                         "Text":  "party",
+                                         "CharacterPosition":  180,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  11.867619047619046
+                                     },
+                                     {
+                                         "Text":  "size",
+                                         "CharacterPosition":  186,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  12.262585034013606
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  192,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  12.847528344671202
+                                     },
+                                     {
+                                         "Text":  "requirements",
+                                         "CharacterPosition":  196,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  13.027482993197278
+                                     },
+                                     {
+                                         "Text":  "stopping",
+                                         "CharacterPosition":  210,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  14.182267573696144
+                                     },
+                                     {
+                                         "Text":  "when",
+                                         "CharacterPosition":  219,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  14.672199546485261
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  224,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  14.852154195011337
+                                     },
+                                     {
+                                         "Text":  "table",
+                                         "CharacterPosition":  226,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  14.917142857142856
+                                     },
+                                     {
+                                         "Text":  "is",
+                                         "CharacterPosition":  232,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  15.287074829931973
+                                     },
+                                     {
+                                         "Text":  "confirmed",
+                                         "CharacterPosition":  235,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  15.452063492063489
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  2,
+                       "sourceSha256":  "ad5b4317d9d03d0417dd376d2399faa99d9380e67ed0543f2fb31eb3f8f4bd5d",
+                       "words":  [
+                                     {
+                                         "Text":  "Choose",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "Madrid",
+                                         "CharacterPosition":  7,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.37941043083900228
+                                     },
+                                     {
+                                         "Text":  "or",
+                                         "CharacterPosition":  14,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  0.77931972789115633
+                                     },
+                                     {
+                                         "Text":  "Navarra",
+                                         "CharacterPosition":  17,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  0.95428571428571407
+                                     },
+                                     {
+                                         "Text":  "Find",
+                                         "CharacterPosition":  26,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  2.2741950113378686
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  31,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  2.6541496598639451
+                                     },
+                                     {
+                                         "Text":  "restaurants",
+                                         "CharacterPosition":  36,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  2.8041269841269836
+                                     },
+                                     {
+                                         "Text":  "save",
+                                         "CharacterPosition":  49,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  3.6639909297052156
+                                     },
+                                     {
+                                         "Text":  "favorites",
+                                         "CharacterPosition":  54,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  3.9939682539682542
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  65,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  4.7487981859410429
+                                     },
+                                     {
+                                         "Text":  "drag",
+                                         "CharacterPosition":  69,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  4.9287528344671205
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  74,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  5.2336961451247159
+                                     },
+                                     {
+                                         "Text":  "shortlist",
+                                         "CharacterPosition":  79,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  5.3836734693877553
+                                     },
+                                     {
+                                         "Text":  "into",
+                                         "CharacterPosition":  89,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  5.9785487528344667
+                                     },
+                                     {
+                                         "Text":  "priority",
+                                         "CharacterPosition":  94,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  6.2684807256235828
+                                     },
+                                     {
+                                         "Text":  "order",
+                                         "CharacterPosition":  103,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  6.8583219954648529
+                                     },
+                                     {
+                                         "Text":  "Four",
+                                         "CharacterPosition":  110,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  8.0832199546485253
+                                     },
+                                     {
+                                         "Text":  "guests",
+                                         "CharacterPosition":  115,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  8.3781405895691616
+                                     },
+                                     {
+                                         "Text":  "Nine",
+                                         "CharacterPosition":  123,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  9.7730612244897941
+                                     },
+                                     {
+                                         "Text":  "o’clock",
+                                         "CharacterPosition":  128,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  10.033015873015872
+                                     },
+                                     {
+                                         "Text":  "Thirty",
+                                         "CharacterPosition":  137,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  11.372925170068028
+                                     },
+                                     {
+                                         "Text":  "minutes",
+                                         "CharacterPosition":  144,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  11.707845804988663
+                                     },
+                                     {
+                                         "Text":  "of",
+                                         "CharacterPosition":  152,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  12.077732426303852
+                                     },
+                                     {
+                                         "Text":  "flexibility",
+                                         "CharacterPosition":  155,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  12.207709750566893
+                                     },
+                                     {
+                                         "Text":  "Add",
+                                         "CharacterPosition":  168,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  13.92249433106576
+                                     },
+                                     {
+                                         "Text":  "seating",
+                                         "CharacterPosition":  172,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  14.142448979591837
+                                     },
+                                     {
+                                         "Text":  "preferences",
+                                         "CharacterPosition":  180,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  14.52734693877551
+                                     },
+                                     {
+                                         "Text":  "dietary",
+                                         "CharacterPosition":  193,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  15.387210884353742
+                                     },
+                                     {
+                                         "Text":  "requirements",
+                                         "CharacterPosition":  201,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  16.027120181405895
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  215,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  16.916916099773243
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  219,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  17.076870748299317
+                                     },
+                                     {
+                                         "Text":  "special",
+                                         "CharacterPosition":  221,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  17.131836734693877
+                                     },
+                                     {
+                                         "Text":  "request",
+                                         "CharacterPosition":  229,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  17.596734693877551
+                                     },
+                                     {
+                                         "Text":  "Start",
+                                         "CharacterPosition":  238,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  19.071655328798187
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  244,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  19.466621315192743
+                                     },
+                                     {
+                                         "Text":  "booking",
+                                         "CharacterPosition":  248,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  19.551564625850336
+                                     },
+                                     {
+                                         "Text":  "Voice",
+                                         "CharacterPosition":  257,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  20.886439909297053
+                                     },
+                                     {
+                                         "Text":  "takes",
+                                         "CharacterPosition":  263,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  21.216371882086165
+                                     },
+                                     {
+                                         "Text":  "on",
+                                         "CharacterPosition":  269,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  21.52131519274376
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  272,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  21.666303854875281
+                                     },
+                                     {
+                                         "Text":  "restaurant",
+                                         "CharacterPosition":  276,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  21.771247165532881
+                                     },
+                                     {
+                                         "Text":  "contact",
+                                         "CharacterPosition":  287,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  22.311156462585032
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  296,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  23.851020408163265
+                                     },
+                                     {
+                                         "Text":  "first",
+                                         "CharacterPosition":  300,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  23.960952380952381
+                                     },
+                                     {
+                                         "Text":  "restaurant",
+                                         "CharacterPosition":  306,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  24.335918367346938
+                                     },
+                                     {
+                                         "Text":  "is",
+                                         "CharacterPosition":  317,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  24.89079365079365
+                                     },
+                                     {
+                                         "Text":  "full",
+                                         "CharacterPosition":  320,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  25.050748299319729
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  326,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  26.32562358276644
+                                     },
+                                     {
+                                         "Text":  "second",
+                                         "CharacterPosition":  330,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  26.420589569161
+                                     },
+                                     {
+                                         "Text":  "proposes",
+                                         "CharacterPosition":  337,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  26.85047619047619
+                                     },
+                                     {
+                                         "Text":  "ten",
+                                         "CharacterPosition":  346,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  27.495328798185934
+                                     },
+                                     {
+                                         "Text":  "thirty",
+                                         "CharacterPosition":  350,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  27.745260770975058
+                                     },
+                                     {
+                                         "Text":  "beyond",
+                                         "CharacterPosition":  358,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  28.535192743764171
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  365,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  28.900090702947846
+                                     },
+                                     {
+                                         "Text":  "allowed",
+                                         "CharacterPosition":  369,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  29.020045351473918
+                                     },
+                                     {
+                                         "Text":  "window",
+                                         "CharacterPosition":  377,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  29.355011337868479
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  385,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  30.624897959183674
+                                     },
+                                     {
+                                         "Text":  "workflow",
+                                         "CharacterPosition":  389,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  30.73482993197279
+                                     },
+                                     {
+                                         "Text":  "moves",
+                                         "CharacterPosition":  398,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  31.229795918367348
+                                     },
+                                     {
+                                         "Text":  "on",
+                                         "CharacterPosition":  404,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  31.554739229024939
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  408,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  32.744716553287979
+                                     },
+                                     {
+                                         "Text":  "third",
+                                         "CharacterPosition":  412,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  32.864671201814055
+                                     },
+                                     {
+                                         "Text":  "provides",
+                                         "CharacterPosition":  418,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  33.094648526077094
+                                     },
+                                     {
+                                         "Text":  "confirmation",
+                                         "CharacterPosition":  427,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  33.569523809523808
+                                     },
+                                     {
+                                         "Text":  "evidence",
+                                         "CharacterPosition":  440,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  34.324308390022672
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  450,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  35.249160997732425
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  454,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  35.399138321995459
+                                     },
+                                     {
+                                         "Text":  "result",
+                                         "CharacterPosition":  458,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  35.5091156462585
+                                     },
+                                     {
+                                         "Text":  "appears",
+                                         "CharacterPosition":  465,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  35.904036281179138
+                                     },
+                                     {
+                                         "Text":  "right",
+                                         "CharacterPosition":  473,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  36.343945578231292
+                                     },
+                                     {
+                                         "Text":  "here",
+                                         "CharacterPosition":  479,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  36.588934240362811
+                                     },
+                                     {
+                                         "Text":  "Your",
+                                         "CharacterPosition":  485,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  37.773832199546483
+                                     },
+                                     {
+                                         "Text":  "requirements",
+                                         "CharacterPosition":  490,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  37.958820861678007
+                                     },
+                                     {
+                                         "Text":  "stay",
+                                         "CharacterPosition":  503,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  38.603628117913829
+                                     },
+                                     {
+                                         "Text":  "in",
+                                         "CharacterPosition":  508,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  38.888616780045346
+                                     },
+                                     {
+                                         "Text":  "control",
+                                         "CharacterPosition":  511,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  39.038594104308388
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  3,
+                       "sourceSha256":  "5b2dca95623457cc82b004f3788966d23c2238ddaff1d9581fd8decaa25bcc4a",
+                       "words":  [
+                                     {
+                                         "Text":  "AI",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "Control",
+                                         "CharacterPosition":  3,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  0.32439909297052155
+                                     },
+                                     {
+                                         "Text":  "Center",
+                                         "CharacterPosition":  11,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.85931972789115652
+                                     },
+                                     {
+                                         "Text":  "takes",
+                                         "CharacterPosition":  18,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  1.2442176870748298
+                                     },
+                                     {
+                                         "Text":  "you",
+                                         "CharacterPosition":  24,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  1.5891609977324264
+                                     },
+                                     {
+                                         "Text":  "inside",
+                                         "CharacterPosition":  28,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  1.7191383219954648
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  35,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  2.1590476190476191
+                                     },
+                                     {
+                                         "Text":  "work",
+                                         "CharacterPosition":  39,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  2.2540136054421769
+                                     },
+                                     {
+                                         "Text":  "behind",
+                                         "CharacterPosition":  44,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  2.5339682539682538
+                                     },
+                                     {
+                                         "Text":  "each",
+                                         "CharacterPosition":  51,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  2.9838548752834466
+                                     },
+                                     {
+                                         "Text":  "booking",
+                                         "CharacterPosition":  56,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  3.1838095238095239
+                                     },
+                                     {
+                                         "Text":  "Open",
+                                         "CharacterPosition":  65,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  4.5186848072562356
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  70,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  4.8036281179138323
+                                     },
+                                     {
+                                         "Text":  "restaurant",
+                                         "CharacterPosition":  72,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  4.8836281179138323
+                                     },
+                                     {
+                                         "Text":  "contact",
+                                         "CharacterPosition":  83,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  5.428480725623583
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  91,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  5.978321995464853
+                                     },
+                                     {
+                                         "Text":  "see",
+                                         "CharacterPosition":  94,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.07328798185941
+                                     },
+                                     {
+                                         "Text":  "its",
+                                         "CharacterPosition":  98,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.3282539682539669
+                                     },
+                                     {
+                                         "Text":  "result",
+                                         "CharacterPosition":  102,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  6.5082086167800455
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  109,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.9131519274376414
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  113,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  7.0731065759637186
+                                     },
+                                     {
+                                         "Text":  "AI",
+                                         "CharacterPosition":  117,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  7.2030839002267575
+                                     },
+                                     {
+                                         "Text":  "workflow",
+                                         "CharacterPosition":  120,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  7.433061224489796
+                                     },
+                                     {
+                                         "Text":  "recorded",
+                                         "CharacterPosition":  129,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  7.9330158730158731
+                                     },
+                                     {
+                                         "Text":  "for",
+                                         "CharacterPosition":  138,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  8.4229024943310655
+                                     },
+                                     {
+                                         "Text":  "that",
+                                         "CharacterPosition":  142,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  8.57283446712018
+                                     },
+                                     {
+                                         "Text":  "call",
+                                         "CharacterPosition":  147,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  8.7777777777777768
+                                     },
+                                     {
+                                         "Text":  "Compare",
+                                         "CharacterPosition":  153,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  10.032698412698412
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  161,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.442585034013605
+                                     },
+                                     {
+                                         "Text":  "three",
+                                         "CharacterPosition":  166,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  10.602539682539682
+                                     },
+                                     {
+                                         "Text":  "contacts",
+                                         "CharacterPosition":  172,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  10.877460317460317
+                                     },
+                                     {
+                                         "Text":  "then",
+                                         "CharacterPosition":  182,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  12.052335600907027
+                                     },
+                                     {
+                                         "Text":  "follow",
+                                         "CharacterPosition":  187,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  12.247301587301587
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  194,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  12.607256235827665
+                                     },
+                                     {
+                                         "Text":  "agents",
+                                         "CharacterPosition":  198,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  12.742222222222223
+                                     },
+                                     {
+                                         "Text":  "from",
+                                         "CharacterPosition":  205,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  13.142086167800452
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  210,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  13.367029478458051
+                                     },
+                                     {
+                                         "Text":  "first",
+                                         "CharacterPosition":  214,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  13.446984126984127
+                                     },
+                                     {
+                                         "Text":  "action",
+                                         "CharacterPosition":  220,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  13.811927437641723
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  227,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  14.211836734693877
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  230,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  14.341814058956913
+                                     },
+                                     {
+                                         "Text":  "final",
+                                         "CharacterPosition":  234,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  14.431791383219954
+                                     },
+                                     {
+                                         "Text":  "outcome",
+                                         "CharacterPosition":  240,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  14.821723356009068
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  4,
+                       "sourceSha256":  "212a031846b2846cff567f85ea27ea23d4bfe1197ba377afe06bd74f273d4561",
+                       "words":  [
+                                     {
+                                         "Text":  "For",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "each",
+                                         "CharacterPosition":  4,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  0.30938775510204081
+                                     },
+                                     {
+                                         "Text":  "call",
+                                         "CharacterPosition":  9,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  0.50934240362811789
+                                     },
+                                     {
+                                         "Text":  "Control",
+                                         "CharacterPosition":  15,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  1.3292970521541949
+                                     },
+                                     {
+                                         "Text":  "Center",
+                                         "CharacterPosition":  23,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  1.8492063492063493
+                                     },
+                                     {
+                                         "Text":  "shows",
+                                         "CharacterPosition":  30,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  2.2291156462585033
+                                     },
+                                     {
+                                         "Text":  "how",
+                                         "CharacterPosition":  36,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  2.5890702947845803
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  40,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  2.7940136054421769
+                                     },
+                                     {
+                                         "Text":  "AI",
+                                         "CharacterPosition":  44,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  2.9289795918367347
+                                     },
+                                     {
+                                         "Text":  "agents",
+                                         "CharacterPosition":  47,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  3.1639455782312926
+                                     },
+                                     {
+                                         "Text":  "worked",
+                                         "CharacterPosition":  54,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  3.5638095238095238
+                                     },
+                                     {
+                                         "Text":  "which",
+                                         "CharacterPosition":  62,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  4.38875283446712
+                                     },
+                                     {
+                                         "Text":  "agent",
+                                         "CharacterPosition":  68,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  4.6087074829931973
+                                     },
+                                     {
+                                         "Text":  "acted",
+                                         "CharacterPosition":  74,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  4.9636281179138324
+                                     },
+                                     {
+                                         "Text":  "when",
+                                         "CharacterPosition":  81,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  5.80857142857143
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  87,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.5335147392290249
+                                     },
+                                     {
+                                         "Text":  "in",
+                                         "CharacterPosition":  91,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  6.6884807256235828
+                                     },
+                                     {
+                                         "Text":  "what",
+                                         "CharacterPosition":  94,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  6.8334693877551018
+                                     },
+                                     {
+                                         "Text":  "order",
+                                         "CharacterPosition":  99,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  7.02843537414966
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  106,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  8.2483446712018136
+                                     },
+                                     {
+                                         "Text":  "graph",
+                                         "CharacterPosition":  110,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  8.3633106575963723
+                                     },
+                                     {
+                                         "Text":  "connects",
+                                         "CharacterPosition":  116,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  8.67827664399093
+                                     },
+                                     {
+                                         "Text":  "their",
+                                         "CharacterPosition":  125,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  9.093151927437642
+                                     },
+                                     {
+                                         "Text":  "actions",
+                                         "CharacterPosition":  131,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  9.2880725623582769
+                                     },
+                                     {
+                                         "Text":  "This",
+                                         "CharacterPosition":  140,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  10.722947845804988
+                                     },
+                                     {
+                                         "Text":  "illustration",
+                                         "CharacterPosition":  145,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  10.967936507936509
+                                     },
+                                     {
+                                         "Text":  "follows",
+                                         "CharacterPosition":  158,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  11.722766439909297
+                                     },
+                                     {
+                                         "Text":  "Voice",
+                                         "CharacterPosition":  166,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  12.167664399092969
+                                     },
+                                     {
+                                         "Text":  "as",
+                                         "CharacterPosition":  172,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  12.482630385487525
+                                     },
+                                     {
+                                         "Text":  "it",
+                                         "CharacterPosition":  175,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  12.662585034013606
+                                     },
+                                     {
+                                         "Text":  "sends",
+                                         "CharacterPosition":  178,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  12.772562358276645
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  184,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  13.107482993197278
+                                     },
+                                     {
+                                         "Text":  "proposed",
+                                         "CharacterPosition":  186,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  13.172471655328799
+                                     },
+                                     {
+                                         "Text":  "time",
+                                         "CharacterPosition":  195,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  13.657369614512472
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  200,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  13.97233560090703
+                                     },
+                                     {
+                                         "Text":  "Negotiation",
+                                         "CharacterPosition":  203,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  14.097278911564624
+                                     },
+                                     {
+                                         "Text":  "Negotiation",
+                                         "CharacterPosition":  216,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  15.842086167800453
+                                     },
+                                     {
+                                         "Text":  "checks",
+                                         "CharacterPosition":  228,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  16.666893424036282
+                                     },
+                                     {
+                                         "Text":  "your",
+                                         "CharacterPosition":  235,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  17.006802721088434
+                                     },
+                                     {
+                                         "Text":  "limits",
+                                         "CharacterPosition":  240,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  17.156780045351471
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  247,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  17.521678004535147
+                                     },
+                                     {
+                                         "Text":  "returns",
+                                         "CharacterPosition":  251,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  17.711655328798187
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  259,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  18.171519274376415
+                                     },
+                                     {
+                                         "Text":  "decision",
+                                         "CharacterPosition":  261,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  18.246485260770974
+                                     },
+                                     {
+                                         "Text":  "so",
+                                         "CharacterPosition":  270,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  18.721360544217688
+                                     },
+                                     {
+                                         "Text":  "Voice",
+                                         "CharacterPosition":  273,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  18.986349206349207
+                                     },
+                                     {
+                                         "Text":  "can",
+                                         "CharacterPosition":  279,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  19.2712925170068
+                                     },
+                                     {
+                                         "Text":  "continue",
+                                         "CharacterPosition":  283,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  19.526213151927436
+                                     },
+                                     {
+                                         "Text":  "within",
+                                         "CharacterPosition":  292,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  20.031020408163261
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  299,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  20.320952380952381
+                                     },
+                                     {
+                                         "Text":  "terms",
+                                         "CharacterPosition":  303,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  20.400907029478457
+                                     },
+                                     {
+                                         "Text":  "you",
+                                         "CharacterPosition":  309,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  20.795827664399091
+                                     },
+                                     {
+                                         "Text":  "authorized",
+                                         "CharacterPosition":  313,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  20.920816326530613
+                                     },
+                                     {
+                                         "Text":  "Verification",
+                                         "CharacterPosition":  325,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  22.540634920634918
+                                     },
+                                     {
+                                         "Text":  "then",
+                                         "CharacterPosition":  338,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  23.345442176870744
+                                     },
+                                     {
+                                         "Text":  "checks",
+                                         "CharacterPosition":  343,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  23.545396825396821
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  350,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  23.875283446712015
+                                     },
+                                     {
+                                         "Text":  "final",
+                                         "CharacterPosition":  354,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  23.970249433106577
+                                     },
+                                     {
+                                         "Text":  "confirmation",
+                                         "CharacterPosition":  360,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  24.355192743764167
+                                     },
+                                     {
+                                         "Text":  "evidence",
+                                         "CharacterPosition":  373,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  25.119954648526075
+                                     },
+                                     {
+                                         "Text":  "Back",
+                                         "CharacterPosition":  383,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  26.539773242630385
+                                     },
+                                     {
+                                         "Text":  "in",
+                                         "CharacterPosition":  388,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  26.834739229024944
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  391,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  26.944716553287982
+                                     },
+                                     {
+                                         "Text":  "recorded",
+                                         "CharacterPosition":  395,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  27.049659863945571
+                                     },
+                                     {
+                                         "Text":  "workflow",
+                                         "CharacterPosition":  404,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  27.519546485260765
+                                     },
+                                     {
+                                         "Text":  "inspect",
+                                         "CharacterPosition":  414,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  28.534421768707482
+                                     },
+                                     {
+                                         "Text":  "each",
+                                         "CharacterPosition":  422,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  29.009297052154196
+                                     },
+                                     {
+                                         "Text":  "agent’s",
+                                         "CharacterPosition":  427,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  29.21922902494331
+                                     },
+                                     {
+                                         "Text":  "actions",
+                                         "CharacterPosition":  435,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  29.614104308390022
+                                     },
+                                     {
+                                         "Text":  "tools",
+                                         "CharacterPosition":  444,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  30.314013605442177
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  451,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  30.938956916099773
+                                     },
+                                     {
+                                         "Text":  "saved",
+                                         "CharacterPosition":  455,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  31.103900226757368
+                                     },
+                                     {
+                                         "Text":  "results",
+                                         "CharacterPosition":  461,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  31.513832199546485
+                                     },
+                                     {
+                                         "Text":  "Memory",
+                                         "CharacterPosition":  470,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  33.038684807256232
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  477,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  33.483537414965987
+                                     },
+                                     {
+                                         "Text":  "Summary",
+                                         "CharacterPosition":  481,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  33.653514739229024
+                                     },
+                                     {
+                                         "Text":  "records",
+                                         "CharacterPosition":  489,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  34.113378684807252
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  497,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  34.598231292517006
+                                     },
+                                     {
+                                         "Text":  "outcome",
+                                         "CharacterPosition":  501,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  34.733197278911568
+                                     },
+                                     {
+                                         "Text":  "Evaluation",
+                                         "CharacterPosition":  510,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  35.718095238095238
+                                     },
+                                     {
+                                         "Text":  "checks",
+                                         "CharacterPosition":  521,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  36.502857142857138
+                                     },
+                                     {
+                                         "Text":  "consistency",
+                                         "CharacterPosition":  528,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  36.822766439909294
+                                     },
+                                     {
+                                         "Text":  "Select",
+                                         "CharacterPosition":  541,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  38.542539682539683
+                                     },
+                                     {
+                                         "Text":  "an",
+                                         "CharacterPosition":  548,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  38.972380952380952
+                                     },
+                                     {
+                                         "Text":  "event",
+                                         "CharacterPosition":  551,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  39.07736961451247
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  557,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  39.38226757369614
+                                     },
+                                     {
+                                         "Text":  "follow",
+                                         "CharacterPosition":  561,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  39.5572335600907
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  568,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  39.927165532879819
+                                     },
+                                     {
+                                         "Text":  "timeline",
+                                         "CharacterPosition":  572,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  40.0271201814059
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  581,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  40.592018140589566
+                                     },
+                                     {
+                                         "Text":  "see",
+                                         "CharacterPosition":  584,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  40.711972789115649
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  588,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  40.961950113378684
+                                     },
+                                     {
+                                         "Text":  "sequence",
+                                         "CharacterPosition":  592,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  41.05691609977324
+                                     },
+                                     {
+                                         "Text":  "of",
+                                         "CharacterPosition":  601,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  41.561814058956919
+                                     },
+                                     {
+                                         "Text":  "agent",
+                                         "CharacterPosition":  604,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  41.691791383219957
+                                     },
+                                     {
+                                         "Text":  "handoffs",
+                                         "CharacterPosition":  610,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  42.041723356009072
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  619,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  42.576598639455781
+                                     },
+                                     {
+                                         "Text":  "what",
+                                         "CharacterPosition":  623,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  42.756553287981852
+                                     },
+                                     {
+                                         "Text":  "happened",
+                                         "CharacterPosition":  628,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  42.93151927437642
+                                     },
+                                     {
+                                         "Text":  "at",
+                                         "CharacterPosition":  637,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  43.311428571428564
+                                     },
+                                     {
+                                         "Text":  "each",
+                                         "CharacterPosition":  640,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  43.461405895691612
+                                     },
+                                     {
+                                         "Text":  "moment",
+                                         "CharacterPosition":  645,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  43.671383219954649
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  5,
+                       "sourceSha256":  "00051525439c4843e7ae1fd1a705fb8fe6829568985e632cf60045c3e720efeb",
+                       "words":  [
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "second",
+                                         "CharacterPosition":  4,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.19442176870748298
+                                     },
+                                     {
+                                         "Text":  "attempt",
+                                         "CharacterPosition":  11,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  0.61433106575963714
+                                     },
+                                     {
+                                         "Text":  "tells",
+                                         "CharacterPosition":  19,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  0.98920634920634909
+                                     },
+                                     {
+                                         "Text":  "us",
+                                         "CharacterPosition":  25,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  1.324126984126984
+                                     },
+                                     {
+                                         "Text":  "why",
+                                         "CharacterPosition":  28,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  1.5190929705215417
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  32,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  1.7640362811791384
+                                     },
+                                     {
+                                         "Text":  "workflow",
+                                         "CharacterPosition":  36,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  1.8740136054421765
+                                     },
+                                     {
+                                         "Text":  "moved",
+                                         "CharacterPosition":  45,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  2.3689795918367347
+                                     },
+                                     {
+                                         "Text":  "on",
+                                         "CharacterPosition":  51,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  2.653877551020408
+                                     },
+                                     {
+                                         "Text":  "We",
+                                         "CharacterPosition":  55,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  3.843854875283446
+                                     },
+                                     {
+                                         "Text":  "asked",
+                                         "CharacterPosition":  58,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  3.9938321995464854
+                                     },
+                                     {
+                                         "Text":  "for",
+                                         "CharacterPosition":  64,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  4.32875283446712
+                                     },
+                                     {
+                                         "Text":  "nine",
+                                         "CharacterPosition":  68,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  4.4887074829931972
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  74,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  5.2986848072562358
+                                     },
+                                     {
+                                         "Text":  "restaurant",
+                                         "CharacterPosition":  78,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  5.418639455782313
+                                     },
+                                     {
+                                         "Text":  "offered",
+                                         "CharacterPosition":  89,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  5.9635374149659848
+                                     },
+                                     {
+                                         "Text":  "ten",
+                                         "CharacterPosition":  97,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  6.3634920634920631
+                                     },
+                                     {
+                                         "Text":  "thirty",
+                                         "CharacterPosition":  101,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  6.6084353741496589
+                                     },
+                                     {
+                                         "Text":  "Ninety",
+                                         "CharacterPosition":  109,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  7.8433560090702947
+                                     },
+                                     {
+                                         "Text":  "minutes",
+                                         "CharacterPosition":  116,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  8.2483446712018136
+                                     },
+                                     {
+                                         "Text":  "exceeds",
+                                         "CharacterPosition":  124,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  8.6182312925170059
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  132,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  9.0581405895691613
+                                     },
+                                     {
+                                         "Text":  "thirty-minute",
+                                         "CharacterPosition":  136,
+                                         "CharacterCount":  13,
+                                         "StartSeconds":  9.1531065759637187
+                                     },
+                                     {
+                                         "Text":  "allowance",
+                                         "CharacterPosition":  150,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  9.7829478458049888
+                                     },
+                                     {
+                                         "Text":  "Offer",
+                                         "CharacterPosition":  161,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  11.227800453514737
+                                     },
+                                     {
+                                         "Text":  "Review",
+                                         "CharacterPosition":  167,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  11.557732426303854
+                                     },
+                                     {
+                                         "Text":  "exposes",
+                                         "CharacterPosition":  174,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  11.887664399092971
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  182,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  12.522539682539682
+                                     },
+                                     {
+                                         "Text":  "recorded",
+                                         "CharacterPosition":  186,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  12.642494331065759
+                                     },
+                                     {
+                                         "Text":  "policy",
+                                         "CharacterPosition":  195,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  13.112380952380953
+                                     },
+                                     {
+                                         "Text":  "decision",
+                                         "CharacterPosition":  202,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  13.607256235827661
+                                     },
+                                     {
+                                         "Text":  "unacceptable",
+                                         "CharacterPosition":  212,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  14.592154195011338
+                                     },
+                                     {
+                                         "Text":  "Beside",
+                                         "CharacterPosition":  226,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  16.286984126984127
+                                     },
+                                     {
+                                         "Text":  "it",
+                                         "CharacterPosition":  233,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  16.706893424036281
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  237,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  17.2918820861678
+                                     },
+                                     {
+                                         "Text":  "backend",
+                                         "CharacterPosition":  241,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  17.386848072562358
+                                     },
+                                     {
+                                         "Text":  "tool",
+                                         "CharacterPosition":  249,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  17.806757369614512
+                                     },
+                                     {
+                                         "Text":  "shows",
+                                         "CharacterPosition":  254,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  18.09174603174603
+                                     },
+                                     {
+                                         "Text":  "how",
+                                         "CharacterPosition":  260,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  18.446712018140591
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  264,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  18.651700680272111
+                                     },
+                                     {
+                                         "Text":  "attempt",
+                                         "CharacterPosition":  268,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  18.786666666666665
+                                     },
+                                     {
+                                         "Text":  "was",
+                                         "CharacterPosition":  276,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  19.161541950113378
+                                     },
+                                     {
+                                         "Text":  "processed",
+                                         "CharacterPosition":  280,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  19.366530612244897
+                                     },
+                                     {
+                                         "Text":  "These",
+                                         "CharacterPosition":  291,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  20.936371882086167
+                                     },
+                                     {
+                                         "Text":  "are",
+                                         "CharacterPosition":  297,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  21.181315192743764
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  301,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  21.336281179138322
+                                     },
+                                     {
+                                         "Text":  "stored",
+                                         "CharacterPosition":  305,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  21.426258503401357
+                                     },
+                                     {
+                                         "Text":  "events",
+                                         "CharacterPosition":  312,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  21.796145124716549
+                                     },
+                                     {
+                                         "Text":  "separate",
+                                         "CharacterPosition":  320,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  22.706031746031744
+                                     },
+                                     {
+                                         "Text":  "from",
+                                         "CharacterPosition":  329,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  23.155918367346935
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  334,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  23.360861678004536
+                                     },
+                                     {
+                                         "Text":  "illustrated",
+                                         "CharacterPosition":  338,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  23.480816326530611
+                                     },
+                                     {
+                                         "Text":  "voice",
+                                         "CharacterPosition":  350,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  24.155646258503403
+                                     },
+                                     {
+                                         "Text":  "handoff",
+                                         "CharacterPosition":  356,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  24.46562358276644
+                                     },
+                                     {
+                                         "Text":  "The",
+                                         "CharacterPosition":  365,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  25.945442176870749
+                                     },
+                                     {
+                                         "Text":  "timeline",
+                                         "CharacterPosition":  369,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  26.055374149659865
+                                     },
+                                     {
+                                         "Text":  "connects",
+                                         "CharacterPosition":  378,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  26.630204081632652
+                                     },
+                                     {
+                                         "Text":  "each",
+                                         "CharacterPosition":  387,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  27.04507936507936
+                                     },
+                                     {
+                                         "Text":  "operation",
+                                         "CharacterPosition":  392,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  27.2550566893424
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  402,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  27.884897959183675
+                                     },
+                                     {
+                                         "Text":  "its",
+                                         "CharacterPosition":  405,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  28.034875283446713
+                                     },
+                                     {
+                                         "Text":  "duration",
+                                         "CharacterPosition":  409,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  28.204852607709746
+                                     },
+                                     {
+                                         "Text":  "Replay",
+                                         "CharacterPosition":  419,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  29.654648526077096
+                                     },
+                                     {
+                                         "Text":  "follows",
+                                         "CharacterPosition":  426,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  30.039546485260772
+                                     },
+                                     {
+                                         "Text":  "that",
+                                         "CharacterPosition":  434,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  30.499455782312921
+                                     },
+                                     {
+                                         "Text":  "history",
+                                         "CharacterPosition":  439,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  30.66938775510204
+                                     },
+                                     {
+                                         "Text":  "without",
+                                         "CharacterPosition":  447,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  31.079229024943309
+                                     },
+                                     {
+                                         "Text":  "making",
+                                         "CharacterPosition":  455,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  31.444126984126985
+                                     },
+                                     {
+                                         "Text":  "another",
+                                         "CharacterPosition":  462,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  31.809070294784579
+                                     },
+                                     {
+                                         "Text":  "call",
+                                         "CharacterPosition":  470,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  32.148979591836735
+                                     },
+                                     {
+                                         "Text":  "And",
+                                         "CharacterPosition":  476,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  33.418911564625851
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  480,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  33.573877551020409
+                                     },
+                                     {
+                                         "Text":  "third",
+                                         "CharacterPosition":  484,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  33.658820861678
+                                     },
+                                     {
+                                         "Text":  "attempt",
+                                         "CharacterPosition":  490,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  33.873786848072555
+                                     },
+                                     {
+                                         "Text":  "closes",
+                                         "CharacterPosition":  498,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  34.233696145124718
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  505,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  34.71360544217687
+                                     },
+                                     {
+                                         "Text":  "loop",
+                                         "CharacterPosition":  509,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  34.818594104308389
+                                     },
+                                     {
+                                         "Text":  "explicit",
+                                         "CharacterPosition":  515,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  35.558548752834461
+                                     },
+                                     {
+                                         "Text":  "confirmation",
+                                         "CharacterPosition":  524,
+                                         "CharacterCount":  12,
+                                         "StartSeconds":  36.168435374149659
+                                     },
+                                     {
+                                         "Text":  "evidence",
+                                         "CharacterPosition":  537,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  36.923219954648523
+                                     },
+                                     {
+                                         "Text":  "checked",
+                                         "CharacterPosition":  547,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  37.848072562358276
+                                     },
+                                     {
+                                         "Text":  "against",
+                                         "CharacterPosition":  555,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  38.157959183673462
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  563,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  38.562857142857141
+                                     },
+                                     {
+                                         "Text":  "request",
+                                         "CharacterPosition":  567,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  38.67278911564626
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  575,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  39.112698412698414
+                                     },
+                                     {
+                                         "Text":  "linked",
+                                         "CharacterPosition":  579,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  39.297641723356
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  586,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  39.552517006802717
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  589,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  39.657505668934242
+                                     },
+                                     {
+                                         "Text":  "final",
+                                         "CharacterPosition":  593,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  39.75247165532879
+                                     },
+                                     {
+                                         "Text":  "result",
+                                         "CharacterPosition":  599,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  40.132426303854878
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  6,
+                       "sourceSha256":  "a5e278abec9f7e67899fc8a19841ca9e494627aa85a3ce6a0bbf996759a2b740",
+                       "words":  [
+                                     {
+                                         "Text":  "Analytics",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "brings",
+                                         "CharacterPosition":  10,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.65428571428571425
+                                     },
+                                     {
+                                         "Text":  "outcomes",
+                                         "CharacterPosition":  17,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  1.0142403628117913
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  26,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  1.5191383219954648
+                                     },
+                                     {
+                                         "Text":  "timings",
+                                         "CharacterPosition":  30,
+                                         "CharacterCount":  7,
+                                         "StartSeconds":  1.7040816326530608
+                                     },
+                                     {
+                                         "Text":  "together",
+                                         "CharacterPosition":  38,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  2.2139682539682539
+                                     },
+                                     {
+                                         "Text":  "making",
+                                         "CharacterPosition":  48,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  3.1038548752834467
+                                     },
+                                     {
+                                         "Text":  "patterns",
+                                         "CharacterPosition":  55,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  3.4837641723356008
+                                     },
+                                     {
+                                         "Text":  "easier",
+                                         "CharacterPosition":  64,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  3.9486167800453513
+                                     },
+                                     {
+                                         "Text":  "to",
+                                         "CharacterPosition":  71,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  4.3735600907029477
+                                     },
+                                     {
+                                         "Text":  "spot",
+                                         "CharacterPosition":  74,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  4.5034920634920628
+                                     },
+                                     {
+                                         "Text":  "In",
+                                         "CharacterPosition":  80,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  5.8283900226757366
+                                     },
+                                     {
+                                         "Text":  "Playground",
+                                         "CharacterPosition":  83,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  5.9883446712018138
+                                     },
+                                     {
+                                         "Text":  "run",
+                                         "CharacterPosition":  95,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  7.0682086167800442
+                                     },
+                                     {
+                                         "Text":  "a",
+                                         "CharacterPosition":  99,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  7.2831746031746034
+                                     },
+                                     {
+                                         "Text":  "scenario",
+                                         "CharacterPosition":  101,
+                                         "CharacterCount":  8,
+                                         "StartSeconds":  7.33814058956916
+                                     },
+                                     {
+                                         "Text":  "review",
+                                         "CharacterPosition":  111,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  8.3880272108843545
+                                     },
+                                     {
+                                         "Text":  "its",
+                                         "CharacterPosition":  118,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  8.7180045351473918
+                                     },
+                                     {
+                                         "Text":  "checks",
+                                         "CharacterPosition":  122,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  8.892970521541951
+                                     },
+                                     {
+                                         "Text":  "and",
+                                         "CharacterPosition":  130,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  9.772925170068028
+                                     },
+                                     {
+                                         "Text":  "open",
+                                         "CharacterPosition":  134,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  9.9478911564625854
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  139,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  10.232834467120181
+                                     },
+                                     {
+                                         "Text":  "trace",
+                                         "CharacterPosition":  143,
+                                         "CharacterCount":  5,
+                                         "StartSeconds":  10.3178231292517
+                                     },
+                                     {
+                                         "Text":  "all",
+                                         "CharacterPosition":  149,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  10.687755102040816
+                                     },
+                                     {
+                                         "Text":  "inside",
+                                         "CharacterPosition":  153,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  10.942721088435373
+                                     },
+                                     {
+                                         "Text":  "the",
+                                         "CharacterPosition":  160,
+                                         "CharacterCount":  3,
+                                         "StartSeconds":  11.377641723356009
+                                     },
+                                     {
+                                         "Text":  "demo",
+                                         "CharacterPosition":  164,
+                                         "CharacterCount":  4,
+                                         "StartSeconds":  11.472607709750566
+                                     },
+                                     {
+                                         "Text":  "environment",
+                                         "CharacterPosition":  169,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  11.832562358276645
+                                     }
+                                 ]
+                   },
+                   {
+                       "scene":  7,
+                       "sourceSha256":  "c7424949235f5a2af4eaedec419a5c74cd8d8859d082185dec973424016173d0",
+                       "words":  [
+                                     {
+                                         "Text":  "AI",
+                                         "CharacterPosition":  0,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  0.099455782312925164
+                                     },
+                                     {
+                                         "Text":  "Restaurant",
+                                         "CharacterPosition":  3,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  0.30439909297052153
+                                     },
+                                     {
+                                         "Text":  "Booker",
+                                         "CharacterPosition":  14,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  0.88430839002267569
+                                     },
+                                     {
+                                         "Text":  "A",
+                                         "CharacterPosition":  22,
+                                         "CharacterCount":  1,
+                                         "StartSeconds":  2.1542403628117914
+                                     },
+                                     {
+                                         "Text":  "simple",
+                                         "CharacterPosition":  24,
+                                         "CharacterCount":  6,
+                                         "StartSeconds":  2.24421768707483
+                                     },
+                                     {
+                                         "Text":  "experience",
+                                         "CharacterPosition":  31,
+                                         "CharacterCount":  10,
+                                         "StartSeconds":  2.6441269841269843
+                                     },
+                                     {
+                                         "Text":  "An",
+                                         "CharacterPosition":  43,
+                                         "CharacterCount":  2,
+                                         "StartSeconds":  4.3089342403628121
+                                     },
+                                     {
+                                         "Text":  "inspectable",
+                                         "CharacterPosition":  46,
+                                         "CharacterCount":  11,
+                                         "StartSeconds":  4.4688888888888885
+                                     },
+                                     {
+                                         "Text":  "execution",
+                                         "CharacterPosition":  58,
+                                         "CharacterCount":  9,
+                                         "StartSeconds":  5.1337414965986392
+                                     }
+                                 ]
+                   }
+               ],
+    "method":  "David SpeakProgress offsets converted from 16000 Hz event clock to 22050 Hz source PCM; exact source PCM SHA-256 match"
+}

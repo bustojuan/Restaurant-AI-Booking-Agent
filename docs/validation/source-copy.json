@@ -1,0 +1,71 @@
+{
+  "copied_files": 322,
+  "excluded_inventory_files": 316,
+  "modified_copied_files": [
+    {
+      "path": ".gitignore",
+      "original_sha256": "036d6e1fe7f91bb37d6e9fdf9817e92d2fe199aab4f5b3a363898dd30edd888a",
+      "release_sha256": "a714c50ebdf082fd71809b7522487eae7d69310c090590ee9020684429a91d7f"
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "a922a764fc870b9c3a95683849327f824a7c678ef8840d5bf95fd5290c56d313",
+      "release_sha256": "3dbaa7493cc04a4a7748512297d90762d559d834ab2c5f2c1c77e9d050abfbfd"
+    },
+    {
+      "path": "backend/.env.example",
+      "original_sha256": "4ea8d410a25ab951d3199c165e008f027f77b445a25078f85eef07d8446db55e",
+      "release_sha256": "086c0e1e610e8dbd80a5a55620f9bcc42b79a600ebbb91612de61403de483555"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "original_sha256": "d895c01c9cb8b98f3445bc5ba58a490fb0483a20085c8403b2ea1e4100f3fa03",
+      "release_sha256": "f6fbea91e486776bb0cd545452a74553922ab118175b983c979bd24ebd303093"
+    },
+    {
+      "path": "backend/uv.lock",
+      "original_sha256": "ff157ba3b6c38201d51bc496b874a2c743c0720fb10dc44972949cf5c1e209e3",
+      "release_sha256": "cfe92b4c51e87f7ee3a6af377e0710a017817f5dbe231ee68cea9bec091d8b77"
+    },
+    {
+      "path": "backend/app/api/routes.py",
+      "original_sha256": "ed27ac7d7d44096ab333dd0e7e20aeb676c74863b5a31505c5d8d8d3e39bb23f",
+      "release_sha256": "4fb53a452e563d95216b688d128daf8dd3f79c34461930354a6fa650b824fe9e"
+    },
+    {
+      "path": "backend/app/observability/api.py",
+      "original_sha256": "2651a32d59f028e6a8d02c08d667a51294eabd861d2baff1bf96f5d4cad9a7d7",
+      "release_sha256": "4449579aaf7dca1bbb870755b78a4633083ba4e2c84e737de1050230793d2f46"
+    },
+    {
+      "path": "backend/docs/frontend-api.md",
+      "original_sha256": "27b8721645031a8c953f4341754599d6176943de581b4b4d1012eb2aa1e5e378",
+      "release_sha256": "d8001b246937e27d65ab9a92ac468e1af6c6a6fbaaff6a3c37d9501ded0e941f"
+    },
+    {
+      "path": "frontend/playwright.config.ts",
+      "original_sha256": "ef1400dcff0f7714383f161711add328918195889b309f7949d3160956b149d9",
+      "release_sha256": "a20aa528d9790ec7313963587994c348c5108e05991cc89bbf972e30767aab2b"
+    },
+    {
+      "path": "frontend/README.md",
+      "original_sha256": "1c1738f8e1231b959475789d3867690e680e5bea4ae382c59d15fcaf5aa6a381",
+      "release_sha256": "a97f4c75e76363ea100f5b3c935d27c3fd5395c0a9409d69a22d4b84333726b4"
+    },
+    {
+      "path": "video/.gitignore",
+      "original_sha256": "470a7a39169163c764f7a7eedb8987a7a99dbf156934914b74bc6bb23dc9d0e7",
+      "release_sha256": "4ebcadd0d65f761adc5cfa6a106fc2fdf5315f3f7e880ba0a4a72429b4f190a0"
+    },
+    {
+      "path": "video/README.md",
+      "original_sha256": "e13aff502184463985fe2dafd25854013b58680bb76671950ccbf4d764ea9fa3",
+      "release_sha256": "cfdeef3c942d8d4af1c36e3d8d46caff6001d761cd1d083bdfffce931ea465fe"
+    },
+    {
+      "path": "video/scripts/validate.mjs",
+      "original_sha256": "bbccf1453fc61ca7ae443056caa94be3c0d319d8ee081d2d523f8b113a8358b6",
+      "release_sha256": "00c20f7913ccec0c6b18382cb9748815ab822b031b4b008d3b3acf1ec76b81e6"
+    }
+  ]
+}

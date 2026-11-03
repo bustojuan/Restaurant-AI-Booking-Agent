@@ -1,0 +1,648 @@
+{
+  "language": "en",
+  "fps": 30,
+  "method": "David SpeakProgress offsets converted from 16000 Hz event clock to 22050 Hz source PCM; exact source PCM SHA-256 match",
+  "timelineSha256": "7afd073eeffc5633d73918bfaadd8cd4c197eecd5b4b1a7fb6272c3d8c064bf2",
+  "audioSha256": [
+    "69e1a62b4b943c1c089b2b6e8571778f5d36224746753b4c979e65e7a9667ed9",
+    "789a58510ac25f1b1e710b1c2f5cd0cd837ddfff61048623fc7399f71d4f82f0",
+    "e4bc59031b872ac9237a9c650e88ad69908c2d1f1458ebba135c47045697f7c7",
+    "465875d8c029cdf8ef98b0c8af4f0e5015eca7361f6782b1c88c59173c296e98",
+    "8ec5773c1b488997dd2da7b29b29f1b3407d55c95d74b5a74d8cd1d211104f15",
+    "3f963268ea82e4d3520e6f2a6f7d0c5e98672636a66aae8b96f57b06abe586b9",
+    "de9d22eeedaefc99f0bfce1f98aff3fadc0768da26b4ec42be611ea079e6fc3a"
+  ],
+  "cues": [
+    {
+      "scene": 1,
+      "text": "AI Restaurant Booker calls restaurants for you.",
+      "startMs": 433.3333333333333,
+      "endMs": 3666.6666666666665,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 13,
+      "endFrame": 110,
+      "lines": [
+        "AI Restaurant Booker",
+        "calls restaurants for you."
+      ]
+    },
+    {
+      "scene": 1,
+      "text": "Choose your restaurants, set their priority order, and enter your booking",
+      "startMs": 3666.6666666666665,
+      "endMs": 7800,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 110,
+      "endFrame": 234,
+      "lines": [
+        "Choose your restaurants, set their",
+        "priority order, and enter your booking"
+      ]
+    },
+    {
+      "scene": 1,
+      "text": "details. It works through your list with your date, time, party size,",
+      "startMs": 7800,
+      "endMs": 12466.666666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 234,
+      "endFrame": 374,
+      "lines": [
+        "details. It works through your list",
+        "with your date, time, party size,"
+      ]
+    },
+    {
+      "scene": 1,
+      "text": "and requirements, stopping when a table is confirmed.",
+      "startMs": 12466.666666666666,
+      "endMs": 16266.666666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 374,
+      "endFrame": 488,
+      "lines": [
+        "and requirements, stopping",
+        "when a table is confirmed."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Choose Madrid or Navarra.",
+      "startMs": 20433.333333333332,
+      "endMs": 22466.666666666668,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 613,
+      "endFrame": 674,
+      "lines": [
+        "Choose Madrid or Navarra."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Find your restaurants, save favorites, and drag your shortlist into priority",
+      "startMs": 22466.666666666668,
+      "endMs": 26800,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 674,
+      "endFrame": 804,
+      "lines": [
+        "Find your restaurants, save favorites,",
+        "and drag your shortlist into priority"
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "order. Four guests. Nine o’clock.",
+      "startMs": 26800,
+      "endMs": 31066.666666666668,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 804,
+      "endFrame": 932,
+      "lines": [
+        "order. Four guests. Nine o’clock."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Thirty minutes of flexibility.",
+      "startMs": 31066.666666666668,
+      "endMs": 33466.666666666664,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 932,
+      "endFrame": 1004,
+      "lines": [
+        "Thirty minutes of flexibility."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Add seating preferences, dietary requirements, and a special request.",
+      "startMs": 33466.666666666664,
+      "endMs": 38333.333333333336,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1004,
+      "endFrame": 1150,
+      "lines": [
+        "Add seating preferences, dietary",
+        "requirements, and a special request."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Start the booking. Voice takes on the restaurant contact.",
+      "startMs": 38333.333333333336,
+      "endMs": 42833.333333333336,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1150,
+      "endFrame": 1285,
+      "lines": [
+        "Start the booking. Voice takes",
+        "on the restaurant contact."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "The first restaurant is full.",
+      "startMs": 42833.333333333336,
+      "endMs": 45166.666666666664,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1285,
+      "endFrame": 1355,
+      "lines": [
+        "The first restaurant is full."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "The second proposes ten thirty, beyond the allowed window.",
+      "startMs": 45166.666666666664,
+      "endMs": 49233.333333333336,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1355,
+      "endFrame": 1477,
+      "lines": [
+        "The second proposes ten thirty,",
+        "beyond the allowed window."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "The workflow moves on.",
+      "startMs": 49233.333333333336,
+      "endMs": 51233.333333333336,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1477,
+      "endFrame": 1537,
+      "lines": [
+        "The workflow moves on."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "The third provides confirmation evidence, and the result appears right here.",
+      "startMs": 51233.333333333336,
+      "endMs": 55966.666666666664,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1537,
+      "endFrame": 1679,
+      "lines": [
+        "The third provides confirmation evidence,",
+        "and the result appears right here."
+      ]
+    },
+    {
+      "scene": 2,
+      "text": "Your requirements stay in control.",
+      "startMs": 55966.666666666664,
+      "endMs": 58433.333333333336,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1679,
+      "endFrame": 1753,
+      "lines": [
+        "Your requirements stay in control."
+      ]
+    },
+    {
+      "scene": 3,
+      "text": "AI Control Center takes you inside the work behind each booking.",
+      "startMs": 60433.333333333336,
+      "endMs": 64600,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1813,
+      "endFrame": 1938,
+      "lines": [
+        "AI Control Center takes you inside",
+        "the work behind each booking."
+      ]
+    },
+    {
+      "scene": 3,
+      "text": "Open a restaurant contact to see its result and the AI workflow",
+      "startMs": 64600,
+      "endMs": 67833.33333333333,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 1938,
+      "endFrame": 2035,
+      "lines": [
+        "Open a restaurant contact to see",
+        "its result and the AI workflow"
+      ]
+    },
+    {
+      "scene": 3,
+      "text": "recorded for that call.",
+      "startMs": 67833.33333333333,
+      "endMs": 69800,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2035,
+      "endFrame": 2094,
+      "lines": [
+        "recorded for that call."
+      ]
+    },
+    {
+      "scene": 3,
+      "text": "Compare your three contacts, then follow the agents from the first action",
+      "startMs": 69800,
+      "endMs": 73733.33333333333,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2094,
+      "endFrame": 2212,
+      "lines": [
+        "Compare your three contacts, then",
+        "follow the agents from the first action"
+      ]
+    },
+    {
+      "scene": 3,
+      "text": "to the final outcome.",
+      "startMs": 73733.33333333333,
+      "endMs": 75566.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2212,
+      "endFrame": 2267,
+      "lines": [
+        "to the final outcome."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "For each call, Control Center shows how the AI agents worked: which",
+      "startMs": 85433.33333333333,
+      "endMs": 89666.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2563,
+      "endFrame": 2690,
+      "lines": [
+        "For each call, Control Center shows",
+        "how the AI agents worked: which"
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "agent acted, when, and in what order.",
+      "startMs": 89666.66666666667,
+      "endMs": 93100,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2690,
+      "endFrame": 2793,
+      "lines": [
+        "agent acted, when, and in what order."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "The graph connects their actions.",
+      "startMs": 93100,
+      "endMs": 95433.33333333333,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2793,
+      "endFrame": 2863,
+      "lines": [
+        "The graph connects their actions."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "This illustration follows Voice as it sends a proposed time to Negotiation.",
+      "startMs": 95433.33333333333,
+      "endMs": 100266.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 2863,
+      "endFrame": 3008,
+      "lines": [
+        "This illustration follows Voice as it",
+        "sends a proposed time to Negotiation."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "Negotiation checks your limits and returns a decision so Voice can continue",
+      "startMs": 100266.66666666667,
+      "endMs": 104233.33333333333,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3008,
+      "endFrame": 3127,
+      "lines": [
+        "Negotiation checks your limits and",
+        "returns a decision so Voice can continue"
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "within the terms you authorized.",
+      "startMs": 104233.33333333333,
+      "endMs": 106600,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3127,
+      "endFrame": 3198,
+      "lines": [
+        "within the terms you authorized."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "Verification then checks the final confirmation evidence.",
+      "startMs": 106600,
+      "endMs": 110366.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3198,
+      "endFrame": 3311,
+      "lines": [
+        "Verification then checks the",
+        "final confirmation evidence."
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "Back in the recorded workflow, inspect each agent’s actions, tools, and saved",
+      "startMs": 110366.66666666667,
+      "endMs": 115066.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3311,
+      "endFrame": 3452,
+      "lines": [
+        "Back in the recorded workflow, inspect",
+        "each agent’s actions, tools, and saved"
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "results. Memory and Summary records the outcome; Evaluation",
+      "startMs": 115066.66666666667,
+      "endMs": 119766.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3452,
+      "endFrame": 3593,
+      "lines": [
+        "results. Memory and Summary",
+        "records the outcome; Evaluation"
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "checks consistency. Select an event and follow the timeline to see the",
+      "startMs": 119766.66666666667,
+      "endMs": 124066.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3593,
+      "endFrame": 3722,
+      "lines": [
+        "checks consistency. Select an event",
+        "and follow the timeline to see the"
+      ]
+    },
+    {
+      "scene": 4,
+      "text": "sequence of agent handoffs and what happened at each moment.",
+      "startMs": 124066.66666666667,
+      "endMs": 127666.66666666667,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3722,
+      "endFrame": 3830,
+      "lines": [
+        "sequence of agent handoffs and",
+        "what happened at each moment."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "The second attempt tells us why the workflow moved on.",
+      "startMs": 130433.33333333333,
+      "endMs": 133966.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 3913,
+      "endFrame": 4019,
+      "lines": [
+        "The second attempt tells us",
+        "why the workflow moved on."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "We asked for nine; the restaurant offered ten thirty.",
+      "startMs": 133966.66666666666,
+      "endMs": 137733.33333333334,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4019,
+      "endFrame": 4132,
+      "lines": [
+        "We asked for nine; the",
+        "restaurant offered ten thirty."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "Ninety minutes exceeds the thirty-minute allowance.",
+      "startMs": 137733.33333333334,
+      "endMs": 140933.33333333334,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4132,
+      "endFrame": 4228,
+      "lines": [
+        "Ninety minutes exceeds the",
+        "thirty-minute allowance."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "Offer Review exposes the recorded policy decision: unacceptable.",
+      "startMs": 140933.33333333334,
+      "endMs": 145700,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4228,
+      "endFrame": 4371,
+      "lines": [
+        "Offer Review exposes the recorded",
+        "policy decision: unacceptable."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "Beside it, the backend tool shows how the attempt was processed.",
+      "startMs": 145700,
+      "endMs": 150100,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4371,
+      "endFrame": 4503,
+      "lines": [
+        "Beside it, the backend tool shows",
+        "how the attempt was processed."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "These are the stored events, separate from the illustrated voice handoff.",
+      "startMs": 150100,
+      "endMs": 154800,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4503,
+      "endFrame": 4644,
+      "lines": [
+        "These are the stored events, separate",
+        "from the illustrated voice handoff."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "The timeline connects each operation to its duration.",
+      "startMs": 154800,
+      "endMs": 158300,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4644,
+      "endFrame": 4749,
+      "lines": [
+        "The timeline connects each",
+        "operation to its duration."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "Replay follows that history without making another call.",
+      "startMs": 158300,
+      "endMs": 161866.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4749,
+      "endFrame": 4856,
+      "lines": [
+        "Replay follows that history",
+        "without making another call."
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "And the third attempt closes the loop: explicit confirmation evidence, checked",
+      "startMs": 161866.66666666666,
+      "endMs": 166333.33333333334,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4856,
+      "endFrame": 4990,
+      "lines": [
+        "And the third attempt closes the loop:",
+        "explicit confirmation evidence, checked"
+      ]
+    },
+    {
+      "scene": 5,
+      "text": "against the request and linked to the final result.",
+      "startMs": 166333.33333333334,
+      "endMs": 169433.33333333334,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 4990,
+      "endFrame": 5083,
+      "lines": [
+        "against the request and",
+        "linked to the final result."
+      ]
+    },
+    {
+      "scene": 6,
+      "text": "Analytics brings outcomes and timings together, making patterns easier to",
+      "startMs": 175433.33333333334,
+      "endMs": 179566.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 5263,
+      "endFrame": 5387,
+      "lines": [
+        "Analytics brings outcomes and timings",
+        "together, making patterns easier to"
+      ]
+    },
+    {
+      "scene": 6,
+      "text": "spot. In Playground, run a scenario, review its checks,",
+      "startMs": 179566.66666666666,
+      "endMs": 184566.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 5387,
+      "endFrame": 5537,
+      "lines": [
+        "spot. In Playground, run a",
+        "scenario, review its checks,"
+      ]
+    },
+    {
+      "scene": 6,
+      "text": "and open the trace—all inside the demo environment.",
+      "startMs": 184566.66666666666,
+      "endMs": 187866.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 5537,
+      "endFrame": 5636,
+      "lines": [
+        "and open the trace—all",
+        "inside the demo environment."
+      ]
+    },
+    {
+      "scene": 7,
+      "text": "AI Restaurant Booker. A simple experience.",
+      "startMs": 188433.33333333334,
+      "endMs": 192166.66666666666,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 5653,
+      "endFrame": 5765,
+      "lines": [
+        "AI Restaurant Booker. A simple experience."
+      ]
+    },
+    {
+      "scene": 7,
+      "text": "An inspectable execution.",
+      "startMs": 192166.66666666666,
+      "endMs": 194333.33333333334,
+      "timestampMs": null,
+      "confidence": null,
+      "startFrame": 5765,
+      "endFrame": 5830,
+      "lines": [
+        "An inspectable execution."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+BARIA — AI Restaurant Booker
+Copyright 2026 BARIA contributors
+
+Original BARIA source code is licensed under Apache License 2.0, as authorized
+by the project owner for this release. See LICENSE.
+
+Third-party software, map data and captured service content retain their own
+licenses and attribution. See THIRD_PARTY_NOTICES.md. The Apache license does
+not relicense third-party dependencies, map data, operating-system fonts or
+the Remotion runtime. No dependency binaries or font files are bundled.

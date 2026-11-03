@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0,
+    "duration": 20,
+    "narration": "AI Restaurant Booker calls restaurants for you. Choose your restaurants, set their priority order, and enter your booking details. It works through your list with your date, time, party size, and requirements, stopping when a table is confirmed."
+  },
+  {
+    "start": 20,
+    "duration": 40,
+    "narration": "Choose Madrid or Navarra. Find your restaurants, save favorites, and drag your shortlist into priority order. Four guests. Nine o’clock. Thirty minutes of flexibility. Add seating preferences, dietary requirements, and a special request. Start the booking. Voice takes on the restaurant contact. The first restaurant is full. The second proposes ten thirty, beyond the allowed window. The workflow moves on. The third provides confirmation evidence, and the result appears right here. Your requirements stay in control."
+  },
+  {
+    "start": 60,
+    "duration": 25,
+    "narration": "AI Control Center takes you inside the work behind each booking. Open a restaurant contact to see its result and the AI workflow recorded for that call. Compare your three contacts, then follow the agents from the first action to the final outcome."
+  },
+  {
+    "start": 85,
+    "duration": 45,
+    "narration": "For each call, Control Center shows how the AI agents worked: which agent acted, when, and in what order. The graph connects their actions. This illustration follows Voice as it sends a proposed time to Negotiation. Negotiation checks your limits and returns a decision so Voice can continue within the terms you authorized. Verification then checks the final confirmation evidence. Back in the recorded workflow, inspect each agent’s actions, tools, and saved results. Memory and Summary records the outcome; Evaluation checks consistency. Select an event and follow the timeline to see the sequence of agent handoffs and what happened at each moment."
+  },
+  {
+    "start": 130,
+    "duration": 45,
+    "narration": "The second attempt tells us why the workflow moved on. We asked for nine; the restaurant offered ten thirty. Ninety minutes exceeds the thirty-minute allowance. Offer Review exposes the recorded policy decision: unacceptable. Beside it, the backend tool shows how the attempt was processed. These are the stored events, separate from the illustrated voice handoff. The timeline connects each operation to its duration. Replay follows that history without making another call. And the third attempt closes the loop: explicit confirmation evidence, checked against the request and linked to the final result."
+  },
+  {
+    "start": 175,
+    "duration": 15,
+    "narration": "Analytics brings outcomes and timings together, making patterns easier to spot. In Playground, run a scenario, review its checks, and open the trace—all inside the demo environment."
+  },
+  {
+    "start": 190,
+    "duration": 5,
+    "narration": "AI Restaurant Booker. A simple experience. An inspectable execution.",
+    "audioOffset": -2
+  }
+]

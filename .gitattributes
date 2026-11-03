@@ -1,0 +1,8 @@
+* text=auto
+*.cmd text eol=crlf
+*.mp4 binary
+*.png binary
+*.wav binary
+*.svg -text
+*.srt -text
+*.vtt -text

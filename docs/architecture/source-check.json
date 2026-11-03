@@ -1,0 +1,98 @@
+{
+  "booking_graph_nodes": [
+    "load",
+    "planning",
+    "supervisor",
+    "research",
+    "prepare_call",
+    "voice_session",
+    "negotiation",
+    "verification",
+    "human_approval",
+    "pause",
+    "memory",
+    "evaluation"
+  ],
+  "supervisor_routes": {
+    "call": "research",
+    "approval": "human_approval",
+    "pause": "pause",
+    "finish": "memory"
+  },
+  "booking_fixed_edges": [
+    [
+      "START",
+      "load"
+    ],
+    [
+      "load",
+      "planning"
+    ],
+    [
+      "planning",
+      "supervisor"
+    ],
+    [
+      "research",
+      "prepare_call"
+    ],
+    [
+      "prepare_call",
+      "voice_session"
+    ],
+    [
+      "voice_session",
+      "negotiation"
+    ],
+    [
+      "negotiation",
+      "verification"
+    ],
+    [
+      "verification",
+      "supervisor"
+    ],
+    [
+      "human_approval",
+      "supervisor"
+    ],
+    [
+      "pause",
+      "supervisor"
+    ],
+    [
+      "memory",
+      "evaluation"
+    ],
+    [
+      "evaluation",
+      "END"
+    ]
+  ],
+  "voice_delegation_targets": [
+    "negotiate",
+    "verify",
+    "requirements",
+    "decline",
+    "clarify"
+  ],
+  "negotiation_decisions": [
+    "ACCEPTABLE",
+    "UNACCEPTABLE",
+    "REQUIRES_USER_APPROVAL",
+    "INSUFFICIENT_INFORMATION"
+  ],
+  "verification_statuses": [
+    "CONFIRMED",
+    "REJECTED",
+    "PENDING",
+    "AMBIGUOUS",
+    "NEEDS_USER_ACTION"
+  ],
+  "sources": [
+    "backend/app/ai/runtime.py::_build",
+    "backend/app/voice/delegation.py",
+    "backend/app/ai/contracts.py"
+  ],
+  "scope": "Source structure check; does not claim external provider acceptance"
+}

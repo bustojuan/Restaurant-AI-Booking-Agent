@@ -1,0 +1,57 @@
+{
+  "diagrams": [
+    {
+      "name": "system-architecture",
+      "width": 1920,
+      "height": 840,
+      "textBounds": [],
+      "textOverlaps": [],
+      "cardBounds": [],
+      "connectorCrossings": [],
+      "minFontSize": 22,
+      "previews": [
+        {
+          "width": 960,
+          "height": 420,
+          "path": "system-architecture-960.png",
+          "minRenderedFontSize": 11
+        },
+        {
+          "width": 800,
+          "height": 350,
+          "path": "system-architecture-800.png",
+          "minRenderedFontSize": 9.166666666666666
+        }
+      ],
+      "svgContainsRaster": false,
+      "renderer": "Installed Chromium (headless), actual SVG at 1×"
+    },
+    {
+      "name": "agent-workflow",
+      "width": 1920,
+      "height": 840,
+      "textBounds": [],
+      "textOverlaps": [],
+      "cardBounds": [],
+      "connectorCrossings": [],
+      "minFontSize": 23,
+      "previews": [
+        {
+          "width": 960,
+          "height": 420,
+          "path": "agent-workflow-960.png",
+          "minRenderedFontSize": 11.5
+        },
+        {
+          "width": 800,
+          "height": 350,
+          "path": "agent-workflow-800.png",
+          "minRenderedFontSize": 9.583333333333334
+        }
+      ],
+      "svgContainsRaster": false,
+      "renderer": "Installed Chromium (headless), actual SVG at 1×"
+    }
+  ],
+  "visualReview": "PNG generation and text geometry are automatic; visual inspection is a separate step"
+}

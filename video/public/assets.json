@@ -1,0 +1,112 @@
+{
+  "clips": {
+    "opening": {
+      "src": "footage/opening.mp4",
+      "duration": 600,
+      "kind": "video"
+    },
+    "selection": {
+      "src": "footage/selection.mp4",
+      "duration": 330,
+      "kind": "video"
+    },
+    "configuration": {
+      "src": "footage/configuration.mp4",
+      "duration": 240,
+      "kind": "video"
+    },
+    "start": {
+      "src": "footage/start.mp4",
+      "duration": 90,
+      "kind": "video"
+    },
+    "outcome": {
+      "src": "footage/outcome.mp4",
+      "duration": 420,
+      "kind": "video"
+    },
+    "history": {
+      "src": "footage/history.mp4",
+      "duration": 420,
+      "kind": "video"
+    },
+    "history-filtered": {
+      "src": "footage/history-filtered.mp4",
+      "duration": 330,
+      "kind": "video"
+    },
+    "graph-before": {
+      "src": "footage/graph-before.mp4",
+      "duration": 330,
+      "kind": "video"
+    },
+    "graph-after": {
+      "src": "footage/graph-after.mp4",
+      "duration": 300,
+      "kind": "video"
+    },
+    "graph-return": {
+      "src": "footage/graph-return.mp4",
+      "duration": 270,
+      "kind": "video"
+    },
+    "offer": {
+      "src": "footage/offer.mp4",
+      "duration": 300,
+      "kind": "video"
+    },
+    "policy": {
+      "src": "footage/policy.mp4",
+      "duration": 210,
+      "kind": "video"
+    },
+    "tool": {
+      "src": "footage/tool.mp4",
+      "duration": 240,
+      "kind": "video"
+    },
+    "replay": {
+      "src": "footage/replay.mp4",
+      "duration": 270,
+      "kind": "video"
+    },
+    "confirmation": {
+      "src": "footage/confirmation.mp4",
+      "duration": 330,
+      "kind": "video"
+    },
+    "analytics": {
+      "src": "footage/analytics.mp4",
+      "duration": 210,
+      "kind": "video"
+    },
+    "playground": {
+      "src": "footage/playground.mp4",
+      "duration": 330,
+      "kind": "video"
+    },
+    "closing": {
+      "src": "footage/graph-after.mp4",
+      "duration": 300,
+      "kind": "video",
+      "provenance": "Actual hero graph video reused as the generic closing background; no loading screen"
+    },
+    "playground-result": {
+      "src": "review/playground.png",
+      "kind": "image",
+      "provenance": "Actual Electron result screenshot; five-second editorial hold, not video footage"
+    }
+  },
+  "audio": {
+    "1": "audio/narration-1.wav",
+    "2": "audio/narration-2.wav",
+    "3": "audio/narration-3.wav",
+    "4": "audio/narration-4.wav",
+    "5": "audio/narration-5.wav",
+    "6": "audio/narration-6.wav",
+    "7": "audio/narration-7.wav"
+  },
+  "music": null,
+  "captureStatus": "captured",
+  "heroBookingId": "76dc6a37-738f-4469-82af-38f4592cce0e"
+}

@@ -1,0 +1,212 @@
+{
+  "python": {
+    "packages": 78,
+    "known_vulnerabilities": 0
+  },
+  "frontend_all": {
+    "info": 0,
+    "low": 0,
+    "moderate": 17,
+    "high": 0,
+    "critical": 0,
+    "total": 17
+  },
+  "frontend_runtime": {
+    "known_vulnerabilities": 0
+  },
+  "video": {
+    "known_vulnerabilities": 0
+  },
+  "development_findings": [
+    {
+      "package": "@electron/asar",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@electron/universal",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "@redocly/openapi-core",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "openapi-typescript",
+        "version": "6.7.6",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "app-builder-lib",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "dir-compare",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "dmg-builder",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "ejs",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "electron-builder",
+      "severity": "moderate",
+      "direct": true,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "electron-builder-squirrel-windows",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "electron-winstaller",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "filelist",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "glob",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "jake",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "minimatch",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [
+        "https://github.com/advisories/GHSA-g3hv-75wg-m249"
+      ],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "openapi-typescript",
+      "severity": "moderate",
+      "direct": true,
+      "advisory_urls": [],
+      "fix": {
+        "name": "openapi-typescript",
+        "version": "6.7.6",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "rimraf",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "package": "temp",
+      "severity": "moderate",
+      "direct": false,
+      "advisory_urls": [],
+      "fix": {
+        "name": "electron-builder",
+        "version": "20.23.1",
+        "isSemVerMajor": true
+      }
+    }
+  ],
+  "remediation": "Only filelock upgraded from 3.32.7 to 4.2.7; all other locked package versions preserved."
+}

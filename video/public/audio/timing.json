@@ -1,0 +1,51 @@
+[
+  {
+    "scene": 1,
+    "rawSeconds": 16.891882,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 20
+  },
+  {
+    "scene": 2,
+    "rawSeconds": 40.398413,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 40
+  },
+  {
+    "scene": 3,
+    "rawSeconds": 16.15161,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 25
+  },
+  {
+    "scene": 4,
+    "rawSeconds": 44.886259,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 45
+  },
+  {
+    "scene": 5,
+    "rawSeconds": 41.45229,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 45
+  },
+  {
+    "scene": 6,
+    "rawSeconds": 13.292381,
+    "tempo": 1.06,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 15
+  },
+  {
+    "scene": 7,
+    "rawSeconds": 6.728526,
+    "tempo": 1.121421,
+    "source": "offline Microsoft David Desktop, provisional",
+    "blockSeconds": 5
+  }
+]

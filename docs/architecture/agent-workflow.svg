@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="840" viewBox="0 0 1920 840" role="img" aria-labelledby="title description">
+<title id="title">BARIA — AI Restaurant Booker · Multi-agent workflow</title>
+<desc id="description">Configured BARIA booking workflow. Planning feeds Supervisor. Its conditional contact branch runs Research and Voice Session, then stored Offer Review and Confirmation Review return to Supervisor. During contact, the voice service can delegate decisions to Negotiation or Verification and receive their results. Simulation performs direct checks. Human approval and pause resume Supervisor. Its finish branch leads to Memory and Summary, then Evaluation. Backend outcomes are persisted decisions, not additional graph nodes.</desc>
+<defs><style>text{font-family:"Segoe UI",Arial,sans-serif}</style>
+<linearGradient id="blue-card" x2="0" y2="1"><stop stop-color="#eef6ff"/><stop offset="1" stop-color="#e0efff"/></linearGradient>
+<linearGradient id="green-card" x2="0" y2="1"><stop stop-color="#eaf5e8"/><stop offset="1" stop-color="#dcefdc"/></linearGradient>
+<linearGradient id="amber-card" x2="0" y2="1"><stop stop-color="#fff8e6"/><stop offset="1" stop-color="#fff0cf"/></linearGradient>
+<linearGradient id="brand" x2="0" y2="1"><stop stop-color="#507fa4"/><stop offset="1" stop-color="#234867"/></linearGradient>
+<marker id="blue" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#365d83"/></marker>
+<marker id="cyan" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#387b9b"/></marker>
+<marker id="purple" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#62628c"/></marker>
+<marker id="green" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#378468"/></marker>
+<marker id="amber" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#bc8b31"/></marker>
+</defs>
+<rect x="0" y="0" width="1920" height="840" rx="0" fill="#fcfdff" stroke="none" stroke-width="1.5"/>
+<rect x="48" y="28" width="64" height="64" rx="16" fill="url(#brand)" stroke="none" stroke-width="1.5"/>
+<g transform="translate(64 43) scale(1)" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 3 2 V 10 Q 3 16 9 16 V 30 M 9 2 V 12 M 15 2 V 10 Q 15 16 9 16 M 27 2 Q 20 8 23 18 H 29 M 29 2 V 30"/></g>
+<text x="134" y="45" font-size="25" fill="#122a46" font-weight="600" text-anchor="start" data-max-width="650">BARIA — AI Restaurant Booker</text>
+<text x="132" y="104" font-size="46" fill="#122a46" font-weight="700" text-anchor="start" data-max-width="900">Multi-agent workflow</text>
+<rect x="964" y="30" width="312" height="46" rx="15" fill="#f4f7fb" stroke="#d5dfea" stroke-width="1.5"/>
+<g transform="translate(979 38) scale(0.9)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 2 9 L 16 2 L 30 9 L 16 16 Z M 2 16 L 16 23 L 30 16 M 2 23 L 16 30 L 30 23"/></g>
+<text x="1021" y="60" font-size="24" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="241">Multi-agent workflow</text>
+<rect x="1294" y="30" width="290" height="46" rx="15" fill="#f4f7fb" stroke="#d5dfea" stroke-width="1.5"/>
+<g transform="translate(1309 38) scale(0.9)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 8 2 L 3 6 C 1 15 17 31 26 29 L 30 24 L 22 18 L 18 22 C 13 20 10 17 8 12 L 12 8 Z M 20 3 Q 29 3 29 12 M 20 8 Q 24 8 24 12"/></g>
+<text x="1351" y="60" font-size="24" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="219">Voice calls (external)</text>
+<rect x="1602" y="30" width="270" height="46" rx="15" fill="#f4f7fb" stroke="#d5dfea" stroke-width="1.5"/>
+<g transform="translate(1617 38) scale(0.9)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="8" r="6"/><path d="M 3 30 V 25 C 3 13 29 13 29 25 V 30 Z"/></g>
+<text x="1659" y="60" font-size="24" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="199">Human in the loop</text>
+<text x="70" y="147" font-size="26" fill="#365d83" font-weight="650" text-anchor="start" data-max-width="360">01 / PREPARATION</text>
+<g data-card="Planning" data-x="70" data-y="158" data-width="310" data-height="86">
+<rect x="70" y="158" width="310" height="86" rx="16" fill="url(#blue-card)" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(90 185.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="28" height="24" rx="3"/><path d="M 2 13 H 30 M 9 2 V 10 M 23 2 V 10"/></g>
+<text x="134" y="196" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="228">Planning</text>
+<text x="134" y="234" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="228">Requirements → plan</text>
+</g>
+<g data-card="Supervisor" data-x="480" data-y="158" data-width="330" data-height="86">
+<rect x="480" y="158" width="330" height="86" rx="16" fill="url(#blue-card)" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(500 185.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="5" r="4"/><circle cx="5" cy="27" r="4"/><circle cx="27" cy="27" r="4"/><path d="M 16 9 V 17 M 5 23 V 17 H 27 V 23"/></g>
+<text x="544" y="196" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="248">Supervisor</text>
+<text x="544" y="234" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="248">Routes on saved state</text>
+</g>
+<g data-card="Research" data-x="972" data-y="158" data-width="360" data-height="86">
+<rect x="972" y="158" width="360" height="86" rx="16" fill="url(#blue-card)" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(992 185.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="13" r="10"/><path d="M 21 21 L 30 30"/></g>
+<text x="1036" y="196" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="278">Research</text>
+<text x="1036" y="234" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="278">Restaurant context</text>
+</g>
+<path data-connector="true" d="M 380 201 L 480 201" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<path data-connector="true" d="M 810 201 L 972 201" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#purple)" stroke-dasharray="8 7"/>
+<text x="892" y="187" font-size="25" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="100">call</text>
+<g data-card="Human decision" data-x="70" data-y="326" data-width="350" data-height="90">
+<rect x="70" y="326" width="350" height="90" rx="16" fill="url(#amber-card)" stroke="#bc8b31" stroke-width="1.5"/>
+<g transform="translate(90 355.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="8" r="6"/><path d="M 3 30 V 25 C 3 13 29 13 29 25 V 30 Z"/></g>
+<text x="134" y="362" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="268">Human decision</text>
+<text x="134" y="406" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="268">Approve · pause · resume</text>
+</g>
+<path data-connector="true" d="M 480 219 L 430 219 L 430 371 L 420 371" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#purple)" marker-start="url(#purple)" stroke-dasharray="8 7"/>
+<text x="70" y="304" font-size="25" fill="#62628c" font-weight="400" text-anchor="start" data-max-width="310">approval / pause</text>
+<rect x="930" y="278" width="900" height="252" rx="22" fill="#eef6f0" stroke="#b9cbdc" stroke-width="1.5"/>
+<text x="958" y="321" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="848">02 / CONTACT</text>
+<path data-connector="true" d="M 1152 244 L 1152 346" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<text x="1412" y="312" font-size="25" fill="#62628c" font-weight="400" text-anchor="start" data-max-width="390">Voice delegation</text>
+<g data-card="Voice Session" data-x="952" data-y="346" data-width="400" data-height="108">
+<rect x="952" y="346" width="400" height="108" rx="16" fill="url(#green-card)" stroke="#378468" stroke-width="1.5"/>
+<g transform="translate(972 384.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 8 2 L 3 6 C 1 15 17 31 26 29 L 30 24 L 22 18 L 18 22 C 13 20 10 17 8 12 L 12 8 Z M 20 3 Q 29 3 29 12 M 20 8 Q 24 8 24 12"/></g>
+<text x="1016" y="392" font-size="36" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="318">Voice Session</text>
+<text x="1016" y="432" font-size="27" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="318">Restaurant contact</text>
+</g>
+<g data-card="Negotiation" data-x="1412" data-y="332" data-width="390" data-height="82">
+<rect x="1412" y="332" width="390" height="82" rx="16" fill="#f7faff" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1432 357.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 6 3 H 26 Q 30 3 30 7 V 21 Q 30 25 26 25 H 15 L 7 31 V 25 H 6 Q 2 25 2 21 V 7 Q 2 3 6 3 Z M 9 13 H 10 M 15 13 H 16 M 21 13 H 22"/></g>
+<text x="1476" y="370" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="308">Negotiation</text>
+<text x="1476" y="404" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="308">Alternative offer</text>
+</g>
+<g data-card="Verification" data-x="1412" data-y="432" data-width="390" data-height="82">
+<rect x="1412" y="432" width="390" height="82" rx="16" fill="#f7faff" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1432 457.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 16 2 L 29 7 V 17 Q 29 26 16 31 Q 3 26 3 17 V 7 Z M 9 16 L 14 21 L 24 11"/></g>
+<text x="1476" y="470" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="308">Verification</text>
+<text x="1476" y="504" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="308">Confirmation evidence</text>
+</g>
+<path data-connector="true" d="M 1352 373 L 1412 373" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#purple)" marker-start="url(#purple)" stroke-dasharray="8 7"/>
+<path data-connector="true" d="M 1352 442 L 1380 442 L 1380 473 L 1412 473" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#purple)" marker-start="url(#purple)" stroke-dasharray="8 7"/>
+<text x="976" y="504" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="380">Simulation: direct checks</text>
+<g data-card="Offer Review" data-x="972" data-y="562" data-width="360" data-height="82">
+<rect x="972" y="562" width="360" height="82" rx="16" fill="#f2f6fb" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(992 587.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="24" height="25" rx="3"/><rect x="10" y="1" width="12" height="8" rx="2"/><path d="M 10 16 H 22 M 10 22 H 22"/></g>
+<text x="1036" y="599" font-size="30" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="278">Offer Review</text>
+<text x="1036" y="634" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="278">After contact · offer</text>
+</g>
+<g data-card="Confirmation Review" data-x="1432" data-y="562" data-width="390" data-height="82">
+<rect x="1432" y="562" width="390" height="82" rx="16" fill="#f2f6fb" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1452 587.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="24" height="25" rx="3"/><rect x="10" y="1" width="12" height="8" rx="2"/><path d="M 10 19 L 14 23 L 23 14"/></g>
+<text x="1496" y="597" font-size="28" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="308">Confirmation Review</text>
+<text x="1496" y="634" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="308">After contact · evidence</text>
+</g>
+<path data-connector="true" d="M 1316 454 L 1316 546 L 1152 546 L 1152 562" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<path data-connector="true" d="M 1332 603 L 1432 603" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<path data-connector="true" d="M 1822 603 L 1860 603 L 1860 124 L 645 124 L 645 158" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<text x="1510" y="109" font-size="24" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="400">Return saved result</text>
+<text x="70" y="474" font-size="25" fill="#365d83" font-weight="650" text-anchor="start" data-max-width="360">03 / BACKEND DECISION</text>
+<rect x="70" y="494" width="310" height="274" rx="17" fill="#f4f7fa" stroke="#b9cbdc" stroke-width="1.5"/>
+<circle cx="103" cy="529" r="7" fill="#378468"/>
+<text x="126" y="539" font-size="28" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="232">Next restaurant</text>
+<circle cx="103" cy="580" r="7" fill="#bc8b31"/>
+<text x="126" y="590" font-size="28" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="232">Human approval</text>
+<circle cx="103" cy="631" r="7" fill="#378468"/>
+<text x="126" y="641" font-size="28" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="232">Confirmed</text>
+<circle cx="103" cy="682" r="7" fill="#d87378"/>
+<text x="126" y="692" font-size="28" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="232">Failed / stopped</text>
+<text x="126" y="740" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="240">Uncertain → reconcile</text>
+<path data-connector="true" d="M 645 244 L 645 634" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 7"/>
+<path data-connector="true" d="M 645 680 L 645 686" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#purple)" stroke-dasharray="8 7"/>
+<text x="669" y="538" font-size="25" fill="#62628c" font-weight="400" text-anchor="start" data-max-width="120">finish</text>
+<text x="480" y="670" font-size="25" fill="#365d83" font-weight="650" text-anchor="start" data-max-width="400">04 / POST-EXECUTION</text>
+<g data-card="Memory &amp; Summary" data-x="480" data-y="686" data-width="330" data-height="82">
+<rect x="480" y="686" width="330" height="82" rx="16" fill="url(#blue-card)" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(500 711.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="6" rx="14" ry="5"/><path d="M 2 6 V 25 C 2 32 30 32 30 25 V 6 M 2 15 C 2 22 30 22 30 15"/></g>
+<text x="544" y="718" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="248">Memory &amp; Summary</text>
+<text x="544" y="758" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="248">Persist outcomes</text>
+</g>
+<g data-card="Evaluation" data-x="972" data-y="686" data-width="360" data-height="82">
+<rect x="972" y="686" width="360" height="82" rx="16" fill="url(#blue-card)" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(992 711.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 4 29 V 18 H 9 V 29 Z M 14 29 V 10 H 19 V 29 Z M 24 29 V 2 H 29 V 29 Z"/></g>
+<text x="1036" y="724" font-size="31" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="278">Evaluation</text>
+<text x="1036" y="758" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="278">Objective checks → END</text>
+</g>
+<path data-connector="true" d="M 810 727 L 972 727" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<rect x="48" y="791" width="1824" height="38" rx="12" fill="#f1f5f9" stroke="none" stroke-width="1.5"/>
+<g transform="translate(70 799) scale(0.7)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 3 12 A 14 14 0 1 1 4 24 M 3 3 V 12 H 12 M 17 8 V 17 L 23 21"/></g>
+<text x="108" y="817" font-size="24" fill="#122a46" font-weight="400" text-anchor="start" data-max-width="650">Events → Control Center replay</text>
+<path data-connector="true" d="M 1010 810 L 1080 810" fill="none" stroke="#62628c" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 7"/>
+<text x="1096" y="817" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="400">Dashed = conditional</text>
+</svg>

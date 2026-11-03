@@ -1,0 +1,74 @@
+{
+  "name": "baria-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "tsc --noEmit && electron-vite build",
+    "start": "electron .",
+    "types:api": "openapi-typescript ../backend/contracts/openapi.json -o src/types/api.generated.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "package": "npm run build && electron-builder --dir",
+    "dev:admin": "node scripts/admin.mjs dev",
+    "start:admin": "node scripts/admin.mjs start",
+    "test:admin": "playwright test admin.spec.ts"
+  },
+  "build": {
+    "appId": "local.baria.booker",
+    "productName": "AI Restaurant Booker",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "dir"
+    }
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@radix-ui/react-dialog": "^1.3.1",
+    "@radix-ui/react-popover": "^1.3.1",
+    "@radix-ui/react-tabs": "^1.2.1",
+    "@tanstack/react-query": "^5.105.0",
+    "@tanstack/react-table": "^8.21.3",
+    "@xyflow/react": "^12.12.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^18.0.9",
+    "lucide-react": "^1.66.0",
+    "maplibre-gl": "^6.16.0",
+    "motion": "^14.9.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.7.0",
+    "ws": "^8.22.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "openapi-typescript": "^7.13.0",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

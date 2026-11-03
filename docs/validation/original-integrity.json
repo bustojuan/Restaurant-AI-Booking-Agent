@@ -1,0 +1,13 @@
+{
+  "baseline_files": 638,
+  "verified_unchanged_files": 636,
+  "runtime_log_changes": [
+    "video/private/studio-workflow-auto.stdout.log"
+  ],
+  "other_changes": [],
+  "unreadable_active_files": [
+    "backend/booking.db.executor.lock"
+  ],
+  "original_edited_by_release_work": false,
+  "generated_environments_in_baseline": false
+}

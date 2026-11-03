@@ -1,0 +1,27 @@
+[
+  {
+    "path": "docs/media/ai-restaurant-booker-demo.mp4",
+    "bytes": 71765223,
+    "sha256": "afafcd77d47d96a5f40129f3e96c7b7d2cd33155d8cb669b5d931432817f6ba7"
+  },
+  {
+    "path": "docs/media/ai-restaurant-booker-demo.en.srt",
+    "bytes": 4086,
+    "sha256": "a0782cf8af578d3a0616da981c9f4dea6bfaaa2db2ab2a1d1689fafffd4b179b"
+  },
+  {
+    "path": "docs/media/ai-restaurant-booker-demo.en.vtt",
+    "bytes": 4094,
+    "sha256": "7d01912c7918fe807c62f55838ddf2213b425da2dfdaaca3453d8b58d363daa1"
+  },
+  {
+    "path": "docs/architecture/system-architecture.svg",
+    "bytes": 22004,
+    "sha256": "b4a7c2e5a0f227371f0769cd738c4cddc54485676176100d15e944f5ab01727f"
+  },
+  {
+    "path": "docs/architecture/agent-workflow.svg",
+    "bytes": 18428,
+    "sha256": "adea94a91f52d971ae844479c164c5a795a11055665befa31302ca8a70232c22"
+  }
+]

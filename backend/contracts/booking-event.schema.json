@@ -1,0 +1,637 @@
+{
+  "$defs": {
+    "AgentActivity": {
+      "additionalProperties": false,
+      "properties": {
+        "trace_id": {
+          "title": "Trace Id",
+          "type": "integer"
+        },
+        "execution_id": {
+          "title": "Execution Id",
+          "type": "string"
+        },
+        "agent": {
+          "enum": [
+            "supervisor",
+            "planning",
+            "research",
+            "voice",
+            "negotiation",
+            "verification",
+            "memory",
+            "evaluation"
+          ],
+          "title": "Agent",
+          "type": "string"
+        },
+        "phase": {
+          "enum": [
+            "started",
+            "completed",
+            "failed"
+          ],
+          "title": "Phase",
+          "type": "string"
+        },
+        "tool": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Tool"
+        },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Elapsed Ms"
+        }
+      },
+      "required": [
+        "trace_id",
+        "execution_id",
+        "agent",
+        "phase",
+        "tool",
+        "elapsed_ms"
+      ],
+      "title": "AgentActivity",
+      "type": "object"
+    },
+    "AttemptOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "restaurant_id": {
+          "title": "Restaurant Id",
+          "type": "string"
+        },
+        "restaurant_name": {
+          "title": "Restaurant Name",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "integer"
+        },
+        "status": {
+          "$ref": "#/$defs/AttemptStatus"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AttemptResult"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "started_at": {
+          "title": "Started At",
+          "type": "string"
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Completed At"
+        },
+        "duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Duration Ms"
+        }
+      },
+      "required": [
+        "id",
+        "restaurant_id",
+        "restaurant_name",
+        "sequence",
+        "status",
+        "result",
+        "started_at",
+        "completed_at",
+        "duration_ms"
+      ],
+      "title": "AttemptOut",
+      "type": "object"
+    },
+    "AttemptResult": {
+      "enum": [
+        "NO_AVAILABILITY",
+        "INCOMPATIBLE_OFFER",
+        "OFFER_ACCEPTABLE",
+        "USER_APPROVAL_REQUIRED",
+        "INSUFFICIENT_INFORMATION",
+        "DECLINED",
+        "CONFIRMED",
+        "NOT_CONFIRMED",
+        "TIMEOUT",
+        "ERROR",
+        "CANCELLED",
+        "INTERRUPTED",
+        "DECLINED_AI",
+        "DISCONNECTED",
+        "AMBIGUOUS",
+        "UNCERTAIN"
+      ],
+      "title": "AttemptResult",
+      "type": "string"
+    },
+    "AttemptStatus": {
+      "enum": [
+        "RUNNING",
+        "COMPLETED",
+        "CANCELLED",
+        "FAILED"
+      ],
+      "title": "AttemptStatus",
+      "type": "string"
+    },
+    "BookingStatus": {
+      "enum": [
+        "DRAFT",
+        "READY",
+        "RUNNING",
+        "WAITING_FOR_USER",
+        "CONFIRMED",
+        "EXHAUSTED",
+        "CANCELLED",
+        "FAILED"
+      ],
+      "title": "BookingStatus",
+      "type": "string"
+    },
+    "BookingSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/BookingStatus"
+        },
+        "version": {
+          "title": "Version",
+          "type": "integer"
+        },
+        "requested_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Requested Date"
+        },
+        "preferred_time": {
+          "anyOf": [
+            {
+              "format": "time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Preferred Time"
+        },
+        "timezone": {
+          "const": "Europe/Madrid",
+          "default": "Europe/Madrid",
+          "title": "Timezone",
+          "type": "string"
+        },
+        "party_size": {
+          "title": "Party Size",
+          "type": "integer"
+        },
+        "current_restaurant": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RestaurantRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "current_call_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AttemptStatus"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contacted_restaurants": {
+          "items": {
+            "$ref": "#/$defs/AttemptOut"
+          },
+          "title": "Contacted Restaurants",
+          "type": "array"
+        },
+        "pending_restaurants": {
+          "items": {
+            "$ref": "#/$defs/RestaurantRef"
+          },
+          "title": "Pending Restaurants",
+          "type": "array"
+        },
+        "total_restaurants": {
+          "title": "Total Restaurants",
+          "type": "integer"
+        },
+        "completed_attempts": {
+          "title": "Completed Attempts",
+          "type": "integer"
+        },
+        "pending_approvals": {
+          "items": {
+            "$ref": "#/$defs/OfferOut"
+          },
+          "title": "Pending Approvals",
+          "type": "array"
+        },
+        "confirmation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ConfirmationOut"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "created_at": {
+          "title": "Created At",
+          "type": "string"
+        },
+        "updated_at": {
+          "title": "Updated At",
+          "type": "string"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Started At"
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Finished At"
+        }
+      },
+      "required": [
+        "id",
+        "status",
+        "version",
+        "requested_date",
+        "preferred_time",
+        "party_size",
+        "current_restaurant",
+        "current_call_status",
+        "contacted_restaurants",
+        "pending_restaurants",
+        "total_restaurants",
+        "completed_attempts",
+        "pending_approvals",
+        "confirmation",
+        "created_at",
+        "updated_at",
+        "started_at",
+        "finished_at"
+      ],
+      "title": "BookingSummary",
+      "type": "object"
+    },
+    "ConfirmationOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "booking_id": {
+          "title": "Booking Id",
+          "type": "string"
+        },
+        "restaurant_id": {
+          "title": "Restaurant Id",
+          "type": "string"
+        },
+        "attempt_id": {
+          "title": "Attempt Id",
+          "type": "string"
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reference"
+        },
+        "details": {
+          "$ref": "#/$defs/OfferDetails"
+        },
+        "simulated": {
+          "title": "Simulated",
+          "type": "boolean"
+        },
+        "confirmed_at": {
+          "title": "Confirmed At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "restaurant_id",
+        "attempt_id",
+        "reference",
+        "details",
+        "simulated",
+        "confirmed_at"
+      ],
+      "title": "ConfirmationOut",
+      "type": "object"
+    },
+    "EventPayload": {
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "$ref": "#/$defs/BookingSummary"
+        },
+        "activity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AgentActivity"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "summary"
+      ],
+      "title": "EventPayload",
+      "type": "object"
+    },
+    "OfferDetails": {
+      "additionalProperties": false,
+      "properties": {
+        "requested_date": {
+          "format": "date",
+          "title": "Requested Date",
+          "type": "string"
+        },
+        "time": {
+          "format": "time",
+          "title": "Time",
+          "type": "string"
+        },
+        "party_size": {
+          "title": "Party Size",
+          "type": "integer"
+        },
+        "table_type": {
+          "enum": [
+            "indifferent",
+            "inside",
+            "terrace"
+          ],
+          "title": "Table Type",
+          "type": "string"
+        },
+        "price_per_person": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Per Person"
+        },
+        "deposit": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Deposit",
+          "type": "number"
+        },
+        "financial_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Financial Conditions",
+          "type": "array"
+        },
+        "verified_requirements": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "title": "Verified Requirements",
+          "type": "object"
+        }
+      },
+      "required": [
+        "requested_date",
+        "time",
+        "party_size",
+        "table_type"
+      ],
+      "title": "OfferDetails",
+      "type": "object"
+    },
+    "OfferOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "booking_id": {
+          "title": "Booking Id",
+          "type": "string"
+        },
+        "attempt_id": {
+          "title": "Attempt Id",
+          "type": "string"
+        },
+        "details": {
+          "$ref": "#/$defs/OfferDetails"
+        },
+        "evaluation": {
+          "enum": [
+            "ACCEPTABLE",
+            "UNACCEPTABLE",
+            "REQUIRES_USER_APPROVAL",
+            "INSUFFICIENT_INFORMATION"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "enum": [
+                "APPROVED",
+                "REJECTED"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Decision"
+        },
+        "approval_pending": {
+          "title": "Approval Pending",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "attempt_id",
+        "details",
+        "evaluation",
+        "decision",
+        "approval_pending"
+      ],
+      "title": "OfferOut",
+      "type": "object"
+    },
+    "RestaurantRef": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "position"
+      ],
+      "title": "RestaurantRef",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "title": "Event Id",
+      "type": "integer"
+    },
+    "event_type": {
+      "enum": [
+        "booking.created",
+        "booking.updated",
+        "restaurant.selected",
+        "booking.started",
+        "call.started",
+        "call.completed",
+        "alternative.proposed",
+        "user.approval_required",
+        "user.decision_received",
+        "booking.confirmed",
+        "booking.exhausted",
+        "booking.cancelled",
+        "booking.failed",
+        "agent.activity"
+      ],
+      "title": "Event Type",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "booking_id": {
+      "title": "Booking Id",
+      "type": "string"
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "payload": {
+      "$ref": "#/$defs/EventPayload"
+    }
+  },
+  "required": [
+    "event_id",
+    "event_type",
+    "schema_version",
+    "booking_id",
+    "timestamp",
+    "payload"
+  ],
+  "title": "EventOut",
+  "type": "object"
+}

@@ -1,0 +1,190 @@
+{
+  "path": "../docs/media/ai-restaurant-booker-demo.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": 5850,
+  "seconds": 195.008,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "decode": "pass",
+  "missingFootage": [],
+  "sourceVideos": [
+    {
+      "id": "opening",
+      "seconds": 20,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "selection",
+      "seconds": 11,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "configuration",
+      "seconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "outcome",
+      "seconds": 14,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "history",
+      "seconds": 14,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "history-filtered",
+      "seconds": 11,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "graph-before",
+      "seconds": 11,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "graph-after",
+      "seconds": 10,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "graph-return",
+      "seconds": 9,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "offer",
+      "seconds": 10,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "policy",
+      "seconds": 7,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "tool",
+      "seconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "replay",
+      "seconds": 9,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "confirmation",
+      "seconds": 11,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "analytics",
+      "seconds": 7,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "playground",
+      "seconds": 11.033333,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    },
+    {
+      "id": "closing",
+      "seconds": 10,
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1"
+    }
+  ],
+  "audioTiming": [
+    {
+      "scene": 1,
+      "startSeconds": 0.3333333333333333,
+      "durationSeconds": 15.914333,
+      "endSeconds": 16.24766633333333
+    },
+    {
+      "scene": 2,
+      "startSeconds": 20.333333333333332,
+      "durationSeconds": 38.090354,
+      "endSeconds": 58.42368733333333
+    },
+    {
+      "scene": 3,
+      "startSeconds": 60.333333333333336,
+      "durationSeconds": 15.215875,
+      "endSeconds": 75.54920833333334
+    },
+    {
+      "scene": 4,
+      "startSeconds": 85.33333333333333,
+      "durationSeconds": 42.324646,
+      "endSeconds": 127.65797933333333
+    },
+    {
+      "scene": 5,
+      "startSeconds": 130.33333333333334,
+      "durationSeconds": 39.084313,
+      "endSeconds": 169.41764633333335
+    },
+    {
+      "scene": 6,
+      "startSeconds": 175.33333333333334,
+      "durationSeconds": 12.51825,
+      "endSeconds": 187.85158333333334
+    },
+    {
+      "scene": 7,
+      "startSeconds": 188.33333333333334,
+      "durationSeconds": 5.980729,
+      "endSeconds": 194.31406233333334
+    }
+  ],
+  "playgroundResult": "Five-second actual Electron screenshot hold; source run is video",
+  "narration": "Offline Windows TTS, provisional and replaceable; no real restaurant audio",
+  "music": "None",
+  "graphIllustration": "Explicitly labeled; not historical activity",
+  "subtitles": {
+    "language": "en",
+    "cues": 46,
+    "burnedIn": true,
+    "srt": "out/ai-restaurant-booker-demo.en.srt",
+    "webVtt": "out/ai-restaurant-booker-demo.en.vtt",
+    "alignment": "Source TTS word events, exact source PCM match, event-clock conversion and actual narration tempo"
+  },
+  "callOpening": "39–46s: explicitly illustrative call initiation; original simulation-start dialog omitted; no real call claimed"
+}

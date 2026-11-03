@@ -1,0 +1,258 @@
+{
+  "scope": "offline_deterministic_simulation",
+  "cases": 15,
+  "passed": 15,
+  "success_rate": 1.0,
+  "false_confirmations": 0,
+  "model_requests": 0,
+  "telephone_calls": 0,
+  "real_audio_tested": false,
+  "results": [
+    {
+      "id": "exact_confirmation",
+      "passed": true,
+      "expected_status": "CONFIRMED",
+      "observed_status": "CONFIRMED",
+      "result": "CONFIRMED",
+      "latency_ms": 5245,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true,
+        "confirmed_conditions_authorized": true,
+        "explicit_evidence_verified": true
+      }
+    },
+    {
+      "id": "unavailable",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "NO_AVAILABILITY",
+      "latency_ms": 4754,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "valid_alternative",
+      "passed": true,
+      "expected_status": "CONFIRMED",
+      "observed_status": "CONFIRMED",
+      "result": "CONFIRMED",
+      "latency_ms": 3896,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true,
+        "confirmed_conditions_authorized": true,
+        "explicit_evidence_verified": true
+      }
+    },
+    {
+      "id": "incompatible_alternative",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "INCOMPATIBLE_OFFER",
+      "latency_ms": 5002,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "time_correction",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "INCOMPATIBLE_OFFER",
+      "latency_ms": 5248,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "interruption_text_fixture",
+      "passed": true,
+      "expected_status": "CONFIRMED",
+      "observed_status": "CONFIRMED",
+      "result": "CONFIRMED",
+      "latency_ms": 4448,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true,
+        "confirmed_conditions_authorized": true,
+        "explicit_evidence_verified": true
+      }
+    },
+    {
+      "id": "ambiguous_reply",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "AMBIGUOUS",
+      "latency_ms": 5576,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "deposit",
+      "passed": true,
+      "expected_status": "WAITING_FOR_USER",
+      "observed_status": "WAITING_FOR_USER",
+      "result": "USER_APPROVAL_REQUIRED",
+      "latency_ms": 3410,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "missing_dietary_evidence",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "INSUFFICIENT_INFORMATION",
+      "latency_ms": 4075,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "caller_hangs_up",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "DISCONNECTED",
+      "latency_ms": 4463,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "connection_lost_on_confirmation",
+      "passed": true,
+      "expected_status": "FAILED",
+      "observed_status": "FAILED",
+      "result": "UNCERTAIN",
+      "latency_ms": 3335,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "incomplete_confirmation",
+      "passed": true,
+      "expected_status": "FAILED",
+      "observed_status": "FAILED",
+      "result": "AMBIGUOUS",
+      "latency_ms": 3575,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "user_cancels",
+      "passed": true,
+      "expected_status": "CANCELLED",
+      "observed_status": "CANCELLED",
+      "result": "CANCELLED",
+      "latency_ms": 3644,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "prompt_injection",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "AMBIGUOUS",
+      "latency_ms": 5742,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    },
+    {
+      "id": "refuses_ai",
+      "passed": true,
+      "expected_status": "EXHAUSTED",
+      "observed_status": "EXHAUSTED",
+      "result": "DECLINED_AI",
+      "latency_ms": 5497,
+      "objective_checks": {
+        "priority_respected": true,
+        "no_duplicate_calls": true,
+        "at_most_one_active_call": true,
+        "confirmation_persisted_iff_confirmed": true,
+        "confirmation_is_last_attempt": true,
+        "no_post_confirmation_calls": true
+      }
+    }
+  ]
+}

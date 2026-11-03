@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="840" viewBox="0 0 1920 840" role="img" aria-labelledby="title description">
+<title id="title">BARIA — AI Restaurant Booker · System architecture</title>
+<desc id="description">BARIA Electron desktop uses React and TypeScript. Electron Main connects through authenticated REST and WebSocket to FastAPI. LangGraph coordinates scoped tools; BookingExecutionService owns booking state. Observability records events in application SQLite, with a separate SQLite checkpoint file. A separate FastAPI voice gateway shares a SQLite mailbox with the booking backend and integrates OpenAI Live and Twilio. Manual Overpass imports supply cached OpenStreetMap restaurant data. Application DB and Event Store are logical groups within one physical file.</desc>
+<defs><style>text{font-family:"Segoe UI",Arial,sans-serif}</style>
+<linearGradient id="blue-card" x2="0" y2="1"><stop stop-color="#eef6ff"/><stop offset="1" stop-color="#e0efff"/></linearGradient>
+<linearGradient id="green-card" x2="0" y2="1"><stop stop-color="#eaf5e8"/><stop offset="1" stop-color="#dcefdc"/></linearGradient>
+<linearGradient id="amber-card" x2="0" y2="1"><stop stop-color="#fff8e6"/><stop offset="1" stop-color="#fff0cf"/></linearGradient>
+<linearGradient id="brand" x2="0" y2="1"><stop stop-color="#507fa4"/><stop offset="1" stop-color="#234867"/></linearGradient>
+<marker id="blue" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#365d83"/></marker>
+<marker id="cyan" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#387b9b"/></marker>
+<marker id="purple" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#62628c"/></marker>
+<marker id="green" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#378468"/></marker>
+<marker id="amber" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 2 2 L 10 6 L 2 10 Z" fill="#bc8b31"/></marker>
+</defs>
+<rect x="0" y="0" width="1920" height="840" rx="0" fill="#fcfdff" stroke="none" stroke-width="1.5"/>
+<rect x="48" y="28" width="64" height="64" rx="16" fill="url(#brand)" stroke="none" stroke-width="1.5"/>
+<g transform="translate(64 43) scale(1)" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 3 2 V 10 Q 3 16 9 16 V 30 M 9 2 V 12 M 15 2 V 10 Q 15 16 9 16 M 27 2 Q 20 8 23 18 H 29 M 29 2 V 30"/></g>
+<text x="134" y="45" font-size="25" fill="#122a46" font-weight="600" text-anchor="start" data-max-width="650">BARIA — AI Restaurant Booker</text>
+<text x="132" y="104" font-size="46" fill="#122a46" font-weight="700" text-anchor="start" data-max-width="900">System architecture</text>
+<rect x="48" y="150" width="340" height="670" rx="22" fill="#f5f8fc" stroke="#b9cbdc" stroke-width="1.5"/>
+<text x="76" y="193" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="288">Tech stack</text>
+<g transform="translate(78 229) scale(1.25)" fill="none" stroke="#387b9b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="16" rx="15" ry="6"/><ellipse cx="16" cy="16" rx="15" ry="6" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="15" ry="6" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2"/></g>
+<text x="138" y="248" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="230">React · TypeScript</text>
+<text x="138" y="285" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="230">Desktop · Electron</text>
+<g transform="translate(78 365) scale(1.25)" fill="none" stroke="#378468" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 18 1 L 5 18 H 15 L 13 31 L 28 12 H 18 Z"/></g>
+<text x="138" y="384" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="230">FastAPI · Python</text>
+<text x="138" y="421" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="230">Backend &amp; services</text>
+<g transform="translate(78 501) scale(1.25)" fill="none" stroke="#62628c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="5" r="4"/><circle cx="5" cy="27" r="4"/><circle cx="27" cy="27" r="4"/><path d="M 16 9 V 17 M 5 23 V 17 H 27 V 23"/></g>
+<text x="138" y="520" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="230">LangGraph</text>
+<text x="138" y="557" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="230">Agent orchestration</text>
+<g transform="translate(78 637) scale(1.25)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="6" rx="14" ry="5"/><path d="M 2 6 V 25 C 2 32 30 32 30 25 V 6 M 2 15 C 2 22 30 22 30 15"/></g>
+<text x="138" y="656" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="230">SQLite</text>
+<text x="138" y="693" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="230">State &amp; checkpoints</text>
+<text x="78" y="783" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="280">Local-first desktop</text>
+<rect x="440" y="150" width="990" height="164" rx="22" fill="url(#blue-card)" stroke="#b9cbdc" stroke-width="1.5"/>
+<g transform="translate(464 170) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 5 3 H 27 V 22 H 5 Z M 1 27 H 31 L 27 22 H 5 Z"/></g>
+<text x="512" y="193" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="894">Desktop Application</text>
+<g data-card="Booking Application" data-x="466" data-y="218" data-width="448" data-height="84">
+<rect x="466" y="218" width="448" height="84" rx="16" fill="#f7fbff" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(486 244.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="28" height="25" rx="3"/><path d="M 2 10 H 30 M 7 6 H 8 M 12 6 H 13"/></g>
+<text x="530" y="254" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="366">Booking Application</text>
+<text x="530" y="292" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="366">Discovery &amp; booking setup</text>
+</g>
+<g data-card="AI Control Center" data-x="944" data-y="218" data-width="460" data-height="84">
+<rect x="944" y="218" width="460" height="84" rx="16" fill="#f7fbff" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(964 244.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 4 29 V 18 H 9 V 29 Z M 14 29 V 10 H 19 V 29 Z M 24 29 V 2 H 29 V 29 Z"/></g>
+<text x="1008" y="254" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="378">AI Control Center</text>
+<text x="1008" y="292" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="378">Calls, traces &amp; analytics</text>
+</g>
+<path data-connector="true" d="M 630 314 L 630 382" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<path data-connector="true" d="M 1190 314 L 1190 382" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<text x="930" y="358" font-size="25" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="320">REST / WebSocket</text>
+<rect x="440" y="382" width="990" height="230" rx="22" fill="#eef6ed" stroke="#b9cbdc" stroke-width="1.5"/>
+<g transform="translate(464 402) scale(1)" fill="none" stroke="#378468" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 12 2 H 20 L 21 7 L 26 8 L 30 14 L 26 18 L 26 24 L 19 27 L 16 31 L 12 27 L 6 26 L 3 19 L 1 15 L 6 11 L 7 6 Z"/><circle cx="16" cy="16" r="5"/></g>
+<text x="512" y="425" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="894">Backend Core</text>
+<g data-card="FastAPI API" data-x="466" data-y="439" data-width="260" data-height="80">
+<rect x="466" y="439" width="260" height="80" rx="16" fill="#f9fcf8" stroke="#a6c5ac" stroke-width="1.5"/>
+<g transform="translate(486 463.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 10 6 L 2 16 L 10 26 M 22 6 L 30 16 L 22 26 M 19 3 L 13 29"/></g>
+<text x="530" y="471" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="178">FastAPI API</text>
+<text x="530" y="509" font-size="24" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="178">REST · WS · Auth</text>
+</g>
+<g data-card="LangGraph" data-x="758" data-y="439" data-width="286" data-height="80">
+<rect x="758" y="439" width="286" height="80" rx="16" fill="#f9fcf8" stroke="#a6c5ac" stroke-width="1.5"/>
+<g transform="translate(778 463.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="5" r="4"/><circle cx="5" cy="27" r="4"/><circle cx="27" cy="27" r="4"/><path d="M 16 9 V 17 M 5 23 V 17 H 27 V 23"/></g>
+<text x="822" y="474" font-size="28" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="204">LangGraph</text>
+<text x="822" y="509" font-size="22" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="204">Supervisor &amp; agents</text>
+</g>
+<g data-card="Booking Execution" data-x="1076" data-y="439" data-width="328" data-height="80">
+<rect x="1076" y="439" width="328" height="80" rx="16" fill="#f9fcf8" stroke="#a6c5ac" stroke-width="1.5"/>
+<g transform="translate(1096 463.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 2 9 L 16 2 L 30 9 L 16 16 Z M 2 16 L 16 23 L 30 16 M 2 23 L 16 30 L 30 23"/></g>
+<text x="1140" y="471" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="246">Booking Execution</text>
+<text x="1140" y="509" font-size="22" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="246">Service · booking policies</text>
+</g>
+<path data-connector="true" d="M 726 479 L 758 479" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<path data-connector="true" d="M 1044 479 L 1076 479" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<rect x="478" y="548" width="914" height="42" rx="14" fill="#e0efdf" stroke="#a6c5ac" stroke-width="1.5"/>
+<g transform="translate(682 554) scale(0.9)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 1 17 H 7 L 11 7 L 16 26 L 21 3 L 25 17 H 31"/></g>
+<text x="730" y="578" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="210">Observability</text>
+<text x="945" y="578" font-size="25" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="390">Events · traces · replay</text>
+<path data-connector="true" d="M 596 519 L 596 548" fill="none" stroke="#378468" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#green)"/>
+<path data-connector="true" d="M 901 519 L 901 548" fill="none" stroke="#378468" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#green)"/>
+<path data-connector="true" d="M 1240 519 L 1240 548" fill="none" stroke="#378468" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#green)"/>
+<rect x="440" y="678" width="990" height="142" rx="22" fill="#f0effa" stroke="#b9cbdc" stroke-width="1.5"/>
+<g transform="translate(464 698) scale(1)" fill="none" stroke="#62628c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="6" rx="14" ry="5"/><path d="M 2 6 V 25 C 2 32 30 32 30 25 V 6 M 2 15 C 2 22 30 22 30 15"/></g>
+<text x="512" y="721" font-size="29" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="894">Data &amp; Persistence</text>
+<g data-card="Application DB" data-x="466" data-y="736" data-width="290" data-height="76">
+<rect x="466" y="736" width="290" height="76" rx="16" fill="#faf9ff" stroke="#b7b5d7" stroke-width="1.5"/>
+<g transform="translate(486 758.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="6" rx="14" ry="5"/><path d="M 2 6 V 25 C 2 32 30 32 30 25 V 6 M 2 15 C 2 22 30 22 30 15"/></g>
+<text x="530" y="769" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="208">Application DB</text>
+<text x="530" y="802" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="208">Bookings · state</text>
+</g>
+<g data-card="Event Store" data-x="780" data-y="736" data-width="290" data-height="76">
+<rect x="780" y="736" width="290" height="76" rx="16" fill="#faf9ff" stroke="#b7b5d7" stroke-width="1.5"/>
+<g transform="translate(800 758.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 2 9 L 16 2 L 30 9 L 16 16 Z M 2 16 L 16 23 L 30 16 M 2 23 L 16 30 L 30 23"/></g>
+<text x="844" y="769" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="208">Event Store</text>
+<text x="844" y="802" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="208">Same SQLite file</text>
+</g>
+<g data-card="Checkpoints" data-x="1094" data-y="736" data-width="310" data-height="76">
+<rect x="1094" y="736" width="310" height="76" rx="16" fill="#faf9ff" stroke="#b7b5d7" stroke-width="1.5"/>
+<g transform="translate(1114 758.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="24" height="25" rx="3"/><rect x="10" y="1" width="12" height="8" rx="2"/><path d="M 10 16 H 22 M 10 22 H 22"/></g>
+<text x="1158" y="769" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="228">Checkpoints</text>
+<text x="1158" y="802" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="228">Separate SQLite file</text>
+</g>
+<path data-connector="true" d="M 630 612 L 630 678" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<path data-connector="true" d="M 1240 612 L 1240 678" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<text x="930" y="654" font-size="25" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="250">SQL · SQLite</text>
+<rect x="1518" y="150" width="354" height="670" rx="22" fill="#f5f8fc" stroke="#b9cbdc" stroke-width="1.5"/>
+<g transform="translate(1542 170) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 12 21 L 21 12 M 10 15 L 6 19 A 6 6 0 0 0 14 28 L 20 22 M 13 10 L 19 4 A 6 6 0 0 1 28 13 L 23 18"/></g>
+<text x="1590" y="193" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="258">External Integrations</text>
+<rect x="1538" y="218" width="314" height="355" rx="18" fill="#e9eff6" stroke="#d0dce8" stroke-width="1.5"/>
+<g transform="translate(1554 232) scale(0.8)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 8 2 L 3 6 C 1 15 17 31 26 29 L 30 24 L 22 18 L 18 22 C 13 20 10 17 8 12 L 12 8 Z M 20 3 Q 29 3 29 12 M 20 8 Q 24 8 24 12"/></g>
+<text x="1594" y="254" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="235">Voice &amp; Telephony</text>
+<g data-card="FastAPI gateway" data-x="1554" data-y="276" data-width="282" data-height="76">
+<rect x="1554" y="276" width="282" height="76" rx="16" fill="#f9fbfd" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1574 298.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 8 2 L 3 6 C 1 15 17 31 26 29 L 30 24 L 22 18 L 18 22 C 13 20 10 17 8 12 L 12 8 Z M 20 3 Q 29 3 29 12 M 20 8 Q 24 8 24 12"/></g>
+<text x="1618" y="308" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="200">FastAPI gateway</text>
+<text x="1618" y="342" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="200">Voice adapter</text>
+</g>
+<g data-card="OpenAI Live" data-x="1554" data-y="363" data-width="282" data-height="80">
+<rect x="1554" y="363" width="282" height="80" rx="16" fill="#f9fbfd" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1574 387.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 1 17 H 7 L 11 7 L 16 26 L 21 3 L 25 17 H 31"/></g>
+<text x="1618" y="397" font-size="27" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="200">OpenAI Live</text>
+<text x="1618" y="433" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="200">Live voice</text>
+</g>
+<g data-card="Twilio" data-x="1554" data-y="457" data-width="282" data-height="80">
+<rect x="1554" y="457" width="282" height="80" rx="16" fill="#f9fbfd" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1574 481.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 8 2 L 3 6 C 1 15 17 31 26 29 L 30 24 L 22 18 L 18 22 C 13 20 10 17 8 12 L 12 8 Z M 20 3 Q 29 3 29 12 M 20 8 Q 24 8 24 12"/></g>
+<text x="1618" y="491" font-size="27" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="200">Twilio</text>
+<text x="1618" y="527" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="200">Calls · media</text>
+</g>
+<path data-connector="true" d="M 1360 439 L 1360 350 L 1480 350 L 1480 308 L 1554 308" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<text x="1380" y="338" font-size="24" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="230">SQLite mailbox</text>
+<path data-connector="true" d="M 1836 308 L 1844 308 L 1844 399 L 1836 399" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<path data-connector="true" d="M 1836 308 L 1849 308 L 1849 493 L 1836 493" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)" marker-start="url(#blue)"/>
+<rect x="1538" y="600" width="314" height="214" rx="18" fill="#e9eff6" stroke="#d0dce8" stroke-width="1.5"/>
+<g transform="translate(1554 608) scale(0.75)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 16 31 Q 3 17 3 12 A 13 11 0 0 1 29 12 Q 29 17 16 31 Z"/><circle cx="16" cy="12" r="4"/></g>
+<text x="1594" y="630" font-size="26" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="235">Restaurant Data</text>
+<g data-card="OpenStreetMap" data-x="1554" data-y="640" data-width="282" data-height="76">
+<rect x="1554" y="640" width="282" height="76" rx="16" fill="#f9fbfd" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1574 662.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 16 31 Q 3 17 3 12 A 13 11 0 0 1 29 12 Q 29 17 16 31 Z"/><circle cx="16" cy="12" r="4"/></g>
+<text x="1618" y="672" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="200">OpenStreetMap</text>
+<text x="1618" y="706" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="200">Restaurant data</text>
+</g>
+<g data-card="Overpass API" data-x="1554" data-y="728" data-width="282" data-height="76">
+<rect x="1554" y="728" width="282" height="76" rx="16" fill="#f9fbfd" stroke="#365d83" stroke-width="1.5"/>
+<g transform="translate(1574 750.0) scale(1)" fill="none" stroke="#365d83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M 2 9 L 16 2 L 30 9 L 16 16 Z M 2 16 L 16 23 L 30 16 M 2 23 L 16 30 L 30 23"/></g>
+<text x="1618" y="760" font-size="25" fill="#122a46" font-weight="650" text-anchor="start" data-max-width="200">Overpass API</text>
+<text x="1618" y="794" font-size="23" fill="#47617a" font-weight="400" text-anchor="start" data-max-width="200">Import · caching</text>
+</g>
+<path data-connector="true" d="M 1554 752 L 1488 752 L 1488 532 L 1430 532" fill="none" stroke="#365d83" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue)"/>
+<text x="1390" y="645" font-size="24" fill="#122a46" font-weight="400" text-anchor="middle" data-max-width="190">HTTPS import</text>
+</svg>

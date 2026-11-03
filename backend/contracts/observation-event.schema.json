@@ -1,0 +1,1131 @@
+{
+  "$defs": {
+    "EventData": {
+      "properties": {
+        "input": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SafeIO"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SafeIO"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "from_node": {
+          "anyOf": [
+            {
+              "maxLength": 100,
+              "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Node"
+        },
+        "to_node": {
+          "anyOf": [
+            {
+              "maxLength": 100,
+              "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Node"
+        },
+        "conditional": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conditional"
+        },
+        "error_type": {
+          "anyOf": [
+            {
+              "maxLength": 100,
+              "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Type"
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "maxLength": 100,
+              "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Code"
+        },
+        "business_event_id": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Business Event Id"
+        },
+        "booking_version": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Booking Version"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "DRAFT",
+                "READY",
+                "RUNNING",
+                "WAITING_FOR_USER",
+                "CONFIRMED",
+                "EXHAUSTED",
+                "CANCELLED",
+                "FAILED",
+                "PENDING",
+                "REJECTED",
+                "AMBIGUOUS",
+                "NEEDS_USER_ACTION"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "enum": [
+                "NO_AVAILABILITY",
+                "OFFER",
+                "OFFER_ACCEPTABLE",
+                "CONFIRMED",
+                "NOT_CONFIRMED",
+                "ERROR",
+                "TIMEOUT",
+                "FAILED",
+                "CANCELLED",
+                "UNCERTAIN",
+                "DECLINED",
+                "DECLINED_AI",
+                "AMBIGUOUS",
+                "DISCONNECTED",
+                "INCOMPATIBLE_OFFER",
+                "USER_APPROVAL_REQUIRED",
+                "INSUFFICIENT_INFORMATION"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Result"
+        },
+        "confirmation_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmation Id"
+        },
+        "offer_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offer Id"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "enum": [
+                "APPROVED",
+                "REJECTED"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Decision"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "enum": [
+                "assistant",
+                "restaurant"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "provisional": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provisional"
+        },
+        "provider_event_type": {
+          "anyOf": [
+            {
+              "maxLength": 100,
+              "pattern": "^[A-Za-z_][A-Za-z0-9_.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Event Type"
+        },
+        "provider_start_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Start Ms"
+        },
+        "provider_end_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider End Ms"
+        },
+        "provider_sequence": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Sequence"
+        },
+        "revision": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revision"
+        },
+        "turn_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Turn Id"
+        },
+        "provider_stream_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Stream Id"
+        },
+        "suppressed_events": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Suppressed Events"
+        },
+        "transport_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "queued",
+                "initiated",
+                "ringing",
+                "in-progress",
+                "completed",
+                "canceled",
+                "failed",
+                "busy",
+                "no-answer"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Transport Status"
+        },
+        "transport_state": {
+          "anyOf": [
+            {
+              "enum": [
+                "PREPARED",
+                "DIALING",
+                "ACTIVE",
+                "ENDED",
+                "UNCERTAIN",
+                "SIMULATED"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Transport State"
+        },
+        "backend_action": {
+          "anyOf": [
+            {
+              "enum": [
+                "CONSULT",
+                "ACCEPT",
+                "STOP",
+                "RECONCILE",
+                "RECONCILED_NO_RESERVATION",
+                "NO_AVAILABILITY",
+                "DECLINED_AI",
+                "AMBIGUOUS"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Backend Action"
+        },
+        "operator_attested_no_reservation": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Operator Attested No Reservation"
+        },
+        "characters": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Characters"
+        },
+        "simulated": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Simulated"
+        },
+        "cached": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cached"
+        },
+        "checkpoint_available": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Checkpoint Available"
+        },
+        "pending_nodes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pending Nodes"
+        },
+        "usage": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ModelUsage"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "reserved_cost_eur": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reserved Cost Eur"
+        },
+        "recording_retained": {
+          "const": false,
+          "default": false,
+          "title": "Recording Retained",
+          "type": "boolean"
+        },
+        "transcript_retained": {
+          "const": false,
+          "default": false,
+          "title": "Transcript Retained",
+          "type": "boolean"
+        }
+      },
+      "title": "EventData",
+      "type": "object"
+    },
+    "ModelUsage": {
+      "properties": {
+        "input_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Tokens"
+        },
+        "output_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Tokens"
+        },
+        "total_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Tokens"
+        },
+        "duration_seconds": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Duration Seconds"
+        },
+        "input_audio_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Audio Tokens"
+        },
+        "output_audio_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Audio Tokens"
+        },
+        "cached_tokens": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cached Tokens"
+        }
+      },
+      "title": "ModelUsage",
+      "type": "object"
+    },
+    "SafeIO": {
+      "description": "Explicit projections only. Never arbitrary LLM/tool JSON.",
+      "properties": {
+        "redacted": {
+          "const": true,
+          "default": true,
+          "title": "Redacted",
+          "type": "boolean"
+        },
+        "supplied": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supplied"
+        },
+        "count": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Count"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "DRAFT",
+                "READY",
+                "RUNNING",
+                "WAITING_FOR_USER",
+                "CONFIRMED",
+                "EXHAUSTED",
+                "CANCELLED",
+                "FAILED",
+                "PENDING",
+                "REJECTED",
+                "AMBIGUOUS",
+                "NEEDS_USER_ACTION"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "evaluation": {
+          "anyOf": [
+            {
+              "enum": [
+                "ACCEPTABLE",
+                "UNACCEPTABLE",
+                "REQUIRES_USER_APPROVAL",
+                "INSUFFICIENT_INFORMATION"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evaluation"
+        },
+        "confirmation_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmation Id"
+        },
+        "attempt_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Attempt Id"
+        },
+        "restaurant_id": {
+          "anyOf": [
+            {
+              "maxLength": 250,
+              "pattern": "^[A-Za-z0-9_:/.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Restaurant Id"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "completed_attempts": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Completed Attempts"
+        },
+        "passed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Passed"
+        },
+        "confirmed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmed"
+        }
+      },
+      "title": "SafeIO",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "integer"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "execution_id": {
+      "title": "Execution Id",
+      "type": "string"
+    },
+    "booking_id": {
+      "title": "Booking Id",
+      "type": "string"
+    },
+    "call_attempt_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Call Attempt Id"
+    },
+    "call_session_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Call Session Id"
+    },
+    "graph_thread_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Graph Thread Id"
+    },
+    "graph_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Graph Version"
+    },
+    "checkpoint_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Checkpoint Id"
+    },
+    "span_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Span Id"
+    },
+    "parent_span_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Parent Span Id"
+    },
+    "agent_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Agent Run Id"
+    },
+    "tool_call_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Tool Call Id"
+    },
+    "delegation_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Delegation Id"
+    },
+    "external_call_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "External Call Id"
+    },
+    "external_session_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "External Session Id"
+    },
+    "kind": {
+      "title": "Kind",
+      "type": "string"
+    },
+    "phase": {
+      "title": "Phase",
+      "type": "string"
+    },
+    "agent": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Agent"
+    },
+    "node": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Node"
+    },
+    "tool": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Tool"
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Model"
+    },
+    "reported_model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Reported Model"
+    },
+    "prompt_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Prompt Version"
+    },
+    "prompt_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Prompt Sha256"
+    },
+    "occurred_at": {
+      "format": "date-time",
+      "title": "Occurred At",
+      "type": "string"
+    },
+    "received_at": {
+      "format": "date-time",
+      "title": "Received At",
+      "type": "string"
+    },
+    "elapsed_ms": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Elapsed Ms"
+    },
+    "execution_offset_ms": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Execution Offset Ms"
+    },
+    "call_offset_ms": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Call Offset Ms"
+    },
+    "data": {
+      "$ref": "#/$defs/EventData"
+    }
+  },
+  "required": [
+    "id",
+    "event_id",
+    "schema_version",
+    "execution_id",
+    "booking_id",
+    "call_attempt_id",
+    "call_session_id",
+    "graph_thread_id",
+    "graph_version",
+    "checkpoint_id",
+    "span_id",
+    "parent_span_id",
+    "agent_run_id",
+    "tool_call_id",
+    "delegation_id",
+    "external_call_id",
+    "external_session_id",
+    "kind",
+    "phase",
+    "agent",
+    "node",
+    "tool",
+    "model",
+    "reported_model",
+    "prompt_version",
+    "prompt_sha256",
+    "occurred_at",
+    "received_at",
+    "elapsed_ms",
+    "execution_offset_ms",
+    "call_offset_ms",
+    "data"
+  ],
+  "title": "ObservationEventOut",
+  "type": "object"
+}

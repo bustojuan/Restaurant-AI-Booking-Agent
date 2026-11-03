@@ -1,0 +1,447 @@
+{
+  "$defs": {
+    "BookingPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "objective": {
+          "title": "Objective",
+          "type": "string"
+        },
+        "mandatory_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mandatory Conditions",
+          "type": "array"
+        },
+        "negotiable_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Negotiable Conditions",
+          "type": "array"
+        },
+        "questions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Questions",
+          "type": "array"
+        },
+        "approval_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Approval Conditions",
+          "type": "array"
+        },
+        "success_criteria": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Success Criteria",
+          "type": "array"
+        },
+        "voice_briefing": {
+          "title": "Voice Briefing",
+          "type": "string"
+        },
+        "uncertainties": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Uncertainties",
+          "type": "array"
+        }
+      },
+      "required": [
+        "objective",
+        "mandatory_conditions",
+        "negotiable_conditions",
+        "questions",
+        "approval_conditions",
+        "success_criteria",
+        "voice_briefing"
+      ],
+      "title": "BookingPlan",
+      "type": "object"
+    },
+    "ExtractedConversation": {
+      "additionalProperties": false,
+      "properties": {
+        "intent": {
+          "enum": [
+            "requirements",
+            "proposal",
+            "confirmation",
+            "no_availability",
+            "refuses_ai",
+            "unclear"
+          ],
+          "title": "Intent",
+          "type": "string"
+        },
+        "offer": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OfferDetails"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "evidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReservationEvidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "supersedes_prior_proposal": {
+          "default": false,
+          "title": "Supersedes Prior Proposal",
+          "type": "boolean"
+        },
+        "requirement_quotes": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Requirement Quotes",
+          "type": "object"
+        },
+        "financial_terms_quote": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Financial Terms Quote"
+        }
+      },
+      "required": [
+        "intent"
+      ],
+      "title": "ExtractedConversation",
+      "type": "object"
+    },
+    "NegotiationDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "evaluation": {
+          "enum": [
+            "ACCEPTABLE",
+            "UNACCEPTABLE",
+            "REQUIRES_USER_APPROVAL",
+            "INSUFFICIENT_INFORMATION"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "spoken_response": {
+          "title": "Spoken Response",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evaluation",
+        "spoken_response"
+      ],
+      "title": "NegotiationDecision",
+      "type": "object"
+    },
+    "OfferDetails": {
+      "additionalProperties": false,
+      "properties": {
+        "requested_date": {
+          "format": "date",
+          "title": "Requested Date",
+          "type": "string"
+        },
+        "time": {
+          "format": "time",
+          "title": "Time",
+          "type": "string"
+        },
+        "party_size": {
+          "title": "Party Size",
+          "type": "integer"
+        },
+        "table_type": {
+          "enum": [
+            "indifferent",
+            "inside",
+            "terrace"
+          ],
+          "title": "Table Type",
+          "type": "string"
+        },
+        "price_per_person": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Per Person"
+        },
+        "deposit": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Deposit",
+          "type": "number"
+        },
+        "financial_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Financial Conditions",
+          "type": "array"
+        },
+        "verified_requirements": {
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "title": "Verified Requirements",
+          "type": "object"
+        }
+      },
+      "required": [
+        "requested_date",
+        "time",
+        "party_size",
+        "table_type"
+      ],
+      "title": "OfferDetails",
+      "type": "object"
+    },
+    "ResearchObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "enum": [
+            "FACT",
+            "HISTORICAL",
+            "UNKNOWN"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed At"
+        }
+      },
+      "required": [
+        "category",
+        "key",
+        "value"
+      ],
+      "title": "ResearchObservation",
+      "type": "object"
+    },
+    "ResearchResult": {
+      "additionalProperties": false,
+      "properties": {
+        "restaurant_id": {
+          "title": "Restaurant Id",
+          "type": "string"
+        },
+        "observations": {
+          "items": {
+            "$ref": "#/$defs/ResearchObservation"
+          },
+          "title": "Observations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "restaurant_id",
+        "observations"
+      ],
+      "title": "ResearchResult",
+      "type": "object"
+    },
+    "ReservationEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "restaurant_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Restaurant Id"
+        },
+        "booking_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Booking Name"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/OfferDetails"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "explicit_confirmation": {
+          "default": false,
+          "title": "Explicit Confirmation",
+          "type": "boolean"
+        },
+        "pending_user_action": {
+          "default": false,
+          "title": "Pending User Action",
+          "type": "boolean"
+        },
+        "contradictory": {
+          "default": false,
+          "title": "Contradictory",
+          "type": "boolean"
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference"
+        },
+        "evidence_kind": {
+          "enum": [
+            "simulated",
+            "provider_transcript"
+          ],
+          "title": "Evidence Kind",
+          "type": "string"
+        },
+        "source_attempt_id": {
+          "title": "Source Attempt Id",
+          "type": "string"
+        },
+        "confirmation_quote": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmation Quote"
+        }
+      },
+      "required": [
+        "evidence_kind",
+        "source_attempt_id"
+      ],
+      "title": "ReservationEvidence",
+      "type": "object"
+    },
+    "VerificationResult": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "CONFIRMED",
+            "REJECTED",
+            "PENDING",
+            "AMBIGUOUS",
+            "NEEDS_USER_ACTION"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "reasons"
+      ],
+      "title": "VerificationResult",
+      "type": "object"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/BookingPlan"
+    },
+    {
+      "$ref": "#/$defs/ResearchResult"
+    },
+    {
+      "$ref": "#/$defs/NegotiationDecision"
+    },
+    {
+      "$ref": "#/$defs/VerificationResult"
+    },
+    {
+      "$ref": "#/$defs/ExtractedConversation"
+    }
+  ]
+}

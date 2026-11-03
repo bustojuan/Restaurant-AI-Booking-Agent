@@ -1,0 +1,17 @@
+[
+  {"id":"exact_confirmation","scenario":"confirm-first","status":"CONFIRMED","result":"CONFIRMED"},
+  {"id":"unavailable","scenario":"all-full","status":"EXHAUSTED","result":"NO_AVAILABILITY"},
+  {"id":"valid_alternative","scenario":"ai-valid-alternative","status":"CONFIRMED","result":"CONFIRMED","time_offset_minutes":15},
+  {"id":"incompatible_alternative","scenario":"ai-incompatible","status":"EXHAUSTED","result":"INCOMPATIBLE_OFFER"},
+  {"id":"time_correction","scenario":"ai-correction","status":"EXHAUSTED","result":"INCOMPATIBLE_OFFER"},
+  {"id":"interruption_text_fixture","scenario":"ai-interruption","status":"CONFIRMED","result":"CONFIRMED"},
+  {"id":"ambiguous_reply","scenario":"ai-ambiguous","status":"EXHAUSTED","result":"AMBIGUOUS"},
+  {"id":"deposit","scenario":"approval","status":"WAITING_FOR_USER","result":"USER_APPROVAL_REQUIRED"},
+  {"id":"missing_dietary_evidence","scenario":"missing-evidence","status":"EXHAUSTED","result":"INSUFFICIENT_INFORMATION"},
+  {"id":"caller_hangs_up","scenario":"ai-disconnect","status":"EXHAUSTED","result":"DISCONNECTED"},
+  {"id":"connection_lost_on_confirmation","scenario":"ai-connection-error","status":"FAILED","result":"UNCERTAIN"},
+  {"id":"incomplete_confirmation","scenario":"ai-incomplete-confirmation","status":"FAILED","result":"AMBIGUOUS"},
+  {"id":"user_cancels","scenario":"confirm-first","status":"CANCELLED","result":"CANCELLED","cancel":true},
+  {"id":"prompt_injection","scenario":"ai-injection","status":"EXHAUSTED","result":"AMBIGUOUS"},
+  {"id":"refuses_ai","scenario":"ai-refuses","status":"EXHAUSTED","result":"DECLINED_AI"}
+]

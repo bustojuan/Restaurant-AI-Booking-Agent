@@ -1,0 +1,31 @@
+{
+  "installer_copy": "independent clean installation",
+  "entrypoint": "Iniciar BARIA.cmd",
+  "backend_health": "passed",
+  "visible_electron_window": true,
+  "duplicate_launch_protected": true,
+  "normal_close_exit_code": 0,
+  "backend_stopped_after_window_close": true,
+  "paid_providers_enabled": false,
+  "original_application_modified": false,
+  "validation_date": "2026-11-03",
+  "platform": "Windows",
+  "fresh_install_entrypoint": "Instalar.cmd",
+  "fresh_install_exit_code": 0,
+  "electron_runtime_provisioned": true,
+  "launcher_regression_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "backend_suite": {
+    "passed": 158,
+    "failed": 2,
+    "total": 160,
+    "failure_category": "Existing integration tests exceeded their 15-second wait during concurrent installation.",
+    "isolated_recheck": {
+      "passed": 2,
+      "failed": 0
+    },
+    "uninterrupted_all_green_run_claimed": false
+  }
+}

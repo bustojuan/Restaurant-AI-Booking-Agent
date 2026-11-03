@@ -1,0 +1,15 @@
+{
+  "freshInstallation": true,
+  "backendHealth": "ok",
+  "mode": "ai_simulation",
+  "bookingStatus": "CONFIRMED",
+  "completedAttempts": 3,
+  "recordedCalls": 3,
+  "recordedExecutions": 1,
+  "mainWindow": true,
+  "adminWindow": true,
+  "graph": true,
+  "timeline": true,
+  "dependenciesFromOriginal": false,
+  "paidProviderCalls": 0
+}
