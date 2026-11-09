@@ -8,10 +8,11 @@ desktop application: choose restaurants, put them in priority order, and supply
 your reservation requirements. The backend coordinates contact, evaluates offers,
 checks confirmation evidence and records the outcome.
 
-Specialized agents work within deterministic booking policies. **AI Control
-Center** makes each execution inspectable, from agent actions and tool calls to
-decisions, timing and historical replay. The application includes a ready-to-run
-simulation and configurable OpenAI voice and Twilio telephony integrations.
+BARIA uses a multi-agent architecture powered by LangGraph to coordinate the restaurant booking process. Specialized agents handle different stages, from planning reservation requirements and researching restaurants to managing voice interactions, evaluating offers, and verifying booking confirmations. The backend enforces booking rules and validates outcomes, keeping critical decisions under deterministic control.
+
+A dedicated **AI Control Center** provides end-to-end visibility into every execution. Users can explore interactive agent workflows, inspect individual agent outputs and tool calls, follow a chronological timeline of events, and review the decisions made throughout the booking process. Previous executions can be replayed from stored events, while analytics provide insights into agent activity and booking outcomes.
+
+The application includes a ready-to-run simulation, with optional OpenAI voice and Twilio telephony integrations for real-world connectivity.
 
 ## Product Demo
 
@@ -26,6 +27,55 @@ simulation and configurable OpenAI voice and Twilio telephony integrations.
 The thumbnail is a frame from the final video at 00:17. The demo combines recorded
 simulations with clearly disclosed illustrative voice interactions; it does not
 present real customer phone calls.
+
+## AI Control Center — Multi-Agent Observability
+
+BARIA's **AI Control Center** makes booking executions inspectable. It connects
+agent workflows to the individual actions, tool results, decisions and timestamps
+recorded during each run, making it possible to review **what happened, in what
+order, and why**.
+
+- **Agent graph and inspector:** explore which agents participated, inspect their
+  individual outputs, tool calls and contextual execution details.
+- **Execution timeline:** follow events chronologically, with synchronized graph,
+  timeline and event selection.
+- **Call history and replay:** examine previous executions from persisted events;
+  replay does **not** rerun agents or place new calls.
+- **Analytics and Playground:** review aggregated records and run separately
+  labelled deterministic scenarios for inspection and testing.
+
+Screenshots below show the actual Electron application using simulated data.
+
+| Agent graph and inspector | Execution timeline |
+| --- | --- |
+| ![Agent graph and inspector](docs/screenshots/agent-graph.png) | ![Execution timeline](docs/screenshots/execution-timeline.png) |
+
+| Call history | Analytics |
+| --- | --- |
+| ![Call history](docs/screenshots/call-history.png) | ![Analytics](docs/screenshots/analytics.png) |
+
+Open the Control Center from the booking application. With the backend already
+running, it can also be launched independently:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-app.ps1 -Admin
+```
+
+Administrative access uses a distinct token and bridge. See the
+[observability data model](backend/OBSERVABILITY_DATA_MODEL.md) and
+[replay design](backend/REPLAY_DESIGN.md) for implementation details.
+
+## Booking Application
+
+Choose restaurants on an interactive map, set reservation requirements, and
+prioritize which venues to contact. The backend coordinates the booking workflow
+and records outcomes subject to explicit policies and confirmation checks.
+
+The screenshots show the actual Electron application using simulated data.
+
+| Restaurant explorer | Reservation configuration |
+| --- | --- |
+| ![Restaurant explorer](docs/screenshots/booking-application.png) | ![Booking configuration](docs/screenshots/booking-configuration.png) |
 
 ## System Architecture
 
@@ -64,22 +114,6 @@ Editable sources and approved PNG previews: [architecture documentation](docs/ar
 - **Local persistence:** independent selection, favorites, drafts and history;
   transactional queue updates with optimistic concurrency.
 
-### Application Screenshots
-
-Screenshots show the actual Electron application with explicitly simulated data.
-
-| Booking application and explorer                                 | Reservation configuration                                            |
-| ---------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Restaurant explorer](docs/screenshots/booking-application.png) | ![Booking configuration](docs/screenshots/booking-configuration.png) |
-
-| Call history                                       | Agent graph and inspector                        |
-| -------------------------------------------------- | ------------------------------------------------ |
-| ![Call history](docs/screenshots/call-history.png) | ![Agent graph](docs/screenshots/agent-graph.png) |
-
-| Execution timeline                                             | Analytics                                    |
-| -------------------------------------------------------------- | -------------------------------------------- |
-| ![Execution timeline](docs/screenshots/execution-timeline.png) | ![Analytics](docs/screenshots/analytics.png) |
-
 ## Technology Stack
 
 | Layer         | Technologies                                           | Role                                                  |
@@ -110,20 +144,6 @@ Setup creates a fresh database and private local credentials. Use the supplied
 simulated restaurants to make a demo booking immediately. No OpenAI or Twilio
 account is needed. [Full installation guide](INSTALLATION.md).
 
-## AI Control Center
-
-Open it from the booking application. With the backend already running, it can also be launched independently:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-app.ps1 -Admin
-```
-
-Select a call to inspect how each agent acted, when it ran, the execution sequence,
-tool results and backend decisions. Replay reads persisted events; it never reruns
-agents. Graph, timeline and event selection are synchronized. Analytics aggregates
-available records, while Playground runs clearly separated deterministic scenarios.
-Administrative access uses a distinct token and bridge.
-
 ## OpenAI & Twilio Configuration
 
 The backend uses `backend/.env`; safe defaults are in
@@ -141,9 +161,9 @@ The code and offline integration tests are included. Follow
 [REAL_CALL_READINESS.md](REAL_CALL_READINESS.md) for account setup, endpoints,
 signature validation and manual provider acceptance.
 
-## Testing and Additional Documentation
+## Testing & Evaluation
 
-### Testing
+### Automated Checks
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test.ps1
