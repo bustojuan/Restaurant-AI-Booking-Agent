@@ -8,11 +8,14 @@ desktop application: choose restaurants, put them in priority order, and supply
 your reservation requirements. The backend coordinates contact, evaluates offers,
 checks confirmation evidence and records the outcome.
 
-BARIA uses a multi-agent architecture powered by LangGraph to coordinate the restaurant booking process. Specialized agents handle different stages, from planning reservation requirements and researching restaurants to managing voice interactions, evaluating offers, and verifying booking confirmations. The backend enforces booking rules and validates outcomes, keeping critical decisions under deterministic control.
+Beyond booking automation, BARIA includes a dedicated **AI Control Center**
+that provides detailed visibility into multi-agent executions, including agent
+workflows, individual outputs, tool calls, execution timelines and historical
+analysis.
 
-A dedicated **AI Control Center** provides end-to-end visibility into every execution. Users can explore interactive agent workflows, inspect individual agent outputs and tool calls, follow a chronological timeline of events, and review the decisions made throughout the booking process. Previous executions can be replayed from stored events, while analytics provide insights into agent activity and booking outcomes.
-
-The application includes a ready-to-run simulation, with optional OpenAI voice and Twilio telephony integrations for real-world connectivity.
+The application includes a ready-to-run simulation and configurable OpenAI
+voice and Twilio telephony integrations. Real phone calls require explicit
+operator configuration and authorization.
 
 ## Product Demo
 
@@ -30,19 +33,29 @@ present real customer phone calls.
 
 ## AI Control Center — Multi-Agent Observability
 
-BARIA's **AI Control Center** makes booking executions inspectable. It connects
-agent workflows to the individual actions, tool results, decisions and timestamps
-recorded during each run, making it possible to review **what happened, in what
-order, and why**.
+BARIA goes beyond automating restaurant bookings by making the multi-agent
+execution process transparent and inspectable. The **AI Control Center** is a
+dedicated observability interface that connects agent activity with the recorded
+events, tool results and backend decisions of each booking attempt. It helps
+explain **which agents participated, what they did, when they acted and how the
+outcome was reached**.
 
-- **Agent graph and inspector:** explore which agents participated, inspect their
-  individual outputs, tool calls and contextual execution details.
-- **Execution timeline:** follow events chronologically, with synchronized graph,
-  timeline and event selection.
-- **Call history and replay:** examine previous executions from persisted events;
-  replay does **not** rerun agents or place new calls.
-- **Analytics and Playground:** review aggregated records and run separately
-  labelled deterministic scenarios for inspection and testing.
+- **Interactive agent workflow:** explore the agents involved in an execution,
+  their interactions and the path followed throughout the booking process.
+- **Agent inspector:** examine individual agent outputs, tool calls, tool
+  results and associated backend decisions.
+- **Execution timeline:** follow events chronologically, including execution
+  timing, with synchronized graph, timeline and event selection.
+- **Call history and historical replay:** inspect earlier executions from
+  persisted events. Replay reconstructs recorded activity; it **does not rerun
+  agents or place new calls**.
+- **Analytics:** review aggregated execution records and booking outcomes to
+  understand system behavior across available runs.
+- **Deterministic Playground:** run controlled simulation scenarios to inspect
+  workflows without contacting real restaurants.
+
+These capabilities make agent behavior easier to trace, debug and evaluate
+without presenting a simulated booking as a verified real-world reservation.
 
 Screenshots below show the actual Electron application using simulated data.
 
