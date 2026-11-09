@@ -31,6 +31,18 @@ The thumbnail is a frame from the final video at 00:17. The demo combines record
 simulations with clearly disclosed illustrative voice interactions; it does not
 present real customer phone calls.
 
+## Booking Application
+
+Choose restaurants on an interactive map, set reservation requirements, and
+prioritize which venues to contact. The backend coordinates the booking workflow
+and records outcomes subject to explicit policies and confirmation checks.
+
+The screenshots show the actual Electron application using simulated data.
+
+| Restaurant explorer | Reservation configuration |
+| --- | --- |
+| ![Restaurant explorer](docs/screenshots/booking-application.png) | ![Booking configuration](docs/screenshots/booking-configuration.png) |
+
 ## AI Control Center — Multi-Agent Observability
 
 BARIA goes beyond automating restaurant bookings by making the multi-agent
@@ -77,18 +89,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-app.ps1 -Admin
 Administrative access uses a distinct token and bridge. See the
 [observability data model](backend/OBSERVABILITY_DATA_MODEL.md) and
 [replay design](backend/REPLAY_DESIGN.md) for implementation details.
-
-## Booking Application
-
-Choose restaurants on an interactive map, set reservation requirements, and
-prioritize which venues to contact. The backend coordinates the booking workflow
-and records outcomes subject to explicit policies and confirmation checks.
-
-The screenshots show the actual Electron application using simulated data.
-
-| Restaurant explorer | Reservation configuration |
-| --- | --- |
-| ![Restaurant explorer](docs/screenshots/booking-application.png) | ![Booking configuration](docs/screenshots/booking-configuration.png) |
 
 ## System Architecture
 
